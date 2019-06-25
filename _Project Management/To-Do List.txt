@@ -1,0 +1,23 @@
+Priority 1
+
+- Create Responsive Carousel Navigation Bar
+	+ Add JavaScript animation for navigation and content slide
+- Investigate creating Web Services/API
+- Perfect Mobile versions of all pages
+- Add a "What does this page do?" popup link which illustrates to 
+	the User what's going on in the backend (web services, html, c# etc) 
+	that drives the page 
+- Declutter homepage (add just a few links to pages/social media instead 
+	of all the text)
+
+Priority 2
+
+- Create a new "Technical Skills" Page
+- Update Photography
+	+ Create JavaScript gallery/carousel
+- Update Projects/Portfolio
+	+ Add sections based on Technical Skill (Not personal/work)
+- Add more JavaScript animations
+	+ Consider Dashboarding or aesthetic visuals
+
+- Refactor code

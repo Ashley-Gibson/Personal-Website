@@ -3,28 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{9AE956C8-4D27-4B88-938B-313F12371BBD}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_21448"
-		Debug.AspNetCompiler.PhysicalPath = "Website\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21448\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_21448"
-		Release.AspNetCompiler.PhysicalPath = "Website\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21448\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "21448"
-		SlnRelativePath = "Website\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard", "Dashboard\Dashboard.csproj", "{4FAEA6EF-767F-414D-B446-2EE5C1A5BAE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebsiteDashboard", "PersonalWebsiteDashboard\PersonalWebsiteDashboard.csproj", "{6254A2FA-985D-498C-832D-260438FD5E0D}"
@@ -35,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9AE956C8-4D27-4B88-938B-313F12371BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AE956C8-4D27-4B88-938B-313F12371BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AE956C8-4D27-4B88-938B-313F12371BBD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AE956C8-4D27-4B88-938B-313F12371BBD}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{4FAEA6EF-767F-414D-B446-2EE5C1A5BAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FAEA6EF-767F-414D-B446-2EE5C1A5BAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FAEA6EF-767F-414D-B446-2EE5C1A5BAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
