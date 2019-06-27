@@ -51,15 +51,25 @@ namespace Website
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseCookiePolicy();            
+            
+            app.UseCookiePolicy();
 
-            //app.UseMvc(routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=Dashboard}/{action=Index}/{id?}");
-            //});
+            // Using Flat HTML in wwwroot as startup page
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                DefaultFileNames = new List<string> { "index.html" }
+            });
+
+            // Must be after UseDefaultFiles()
+            app.UseStaticFiles();
+
+            // Using MVC View pages instead of flat html wwwroot pages
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Dashboard}/{action=Index}");
+            });
         }
     }
 }
