@@ -1,0 +1,205 @@
+<html>
+<head>
+    <title>Ashley Gibson</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/social/cameraEmoji.png">
+
+    <!-- Import Fonts -->
+    <link href="/styles/fonts/Poiret_One.css" rel="stylesheet">
+    <link href="/styles/fonts/Open_Sans.css" rel="stylesheet">
+    <link href="/styles/fonts/Quicksand.css" rel="stylesheet">
+    <link href="/styles/fonts/Brandon-Grotesque.css" rel="stylesheet">
+
+    <!-- Import Main CSS -->
+    <link href="styles/portfolio.css" rel="stylesheet">
+
+    <!-- Import Global CSS -->
+    <link href="styles/global.css" rel="stylesheet">
+
+    <!-- Import JQuery -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- HotJar Tracking Code -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1238566, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+/**/</script>
+</head>
+
+    <body>
+		<!-- Loading Spinner -->
+		<div id="loading"></div>
+
+		<!-- Show/Hide Page -->
+		<div id="page" style="display:none;">
+			<!--CV Download Button -->
+			<div>
+				<a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
+			</div>
+
+	<!-- ***************************** Second Layer - Experience ***************************** -->
+
+			<div id="secondLayer">
+				<h1 id="secondLayerHeader">
+					Some of my projects...
+				</h1>
+				<h2>
+					Download my <a href="/docs/Portfolio.zip">Portfolio</a> or view my <a href="https://github.com/Ashley-Gibson" target="_blank">GitHub</a>
+				</h2>
+
+				<!-- Work/University Projects -->
+				<div id="portfolioSelector">
+					<a id="educationSelectorButton" onclick="showEducationPortfolio()">Education</a>
+					&nbsp;|&nbsp;
+					<a title="Coming soon..." id="workSelectorButton" onclick="">Work</a>
+				</div>
+
+				<table id="workPortfolio">
+					<!-- Row 1 -->
+					<tr>
+						<!-- Left Column -->
+						<td id="portfolioText">Work 1</td>
+						<!-- Middle Column -->
+						<td id="portfolioText">Work 2</td>
+						<!-- Right Column -->
+						<td id="portfolioText">Work 3</td>
+					</tr>
+					<tr>
+						<!-- Left Column -->
+						<td><img id="portfolioImage" src="images/portfolio/numberManipulator.png"></td>
+						<!-- Middle Column -->
+						<td><img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png"></td>
+						<!-- Right Column -->
+						<td><img id="portfolioImage" src="images/portfolio/tictactoe.png"></td>
+
+					</tr>
+					<!-- Row 2 -->
+					<tr>
+						<!-- Left Column -->
+						<td id="portfolioText">Work 4</td>
+						<!-- Middle Column -->
+						<td id="portfolioText">Work 5</td>
+						<!-- Right Column -->
+						<td id="portfolioText">Work 6</td>						
+					</tr>		
+					<tr>
+						<!-- Left Column -->
+						<td><img id="portfolioImage" src="images/portfolio/warriorsWalk.png"></td>
+						<!-- M,iddle Column -->
+						<td><img id="portfolioImage" src="images/portfolio/jump.png"></td>
+						<!-- Right Column -->
+						<td><img id="portfolioImage" src="images/portfolio/shadows.png"></td>
+					</tr>
+				</table>
+
+				<table id="educactionPortfolio">
+					<!-- Row 1 -->
+					<tr>
+						<!-- Left Column -->
+						<td id="portfolioText">Number Manipulator - C#.NET</td>
+						<!-- Middle Column -->
+						<td id="portfolioText">Spot and the Zombies - C++</td>
+						<!-- Right Column -->
+						<td id="portfolioText">Tic Tac Toe - C++</td>
+					</tr>
+					<tr>
+						<!-- Left Column -->
+						<td><img id="portfolioImage" src="images/portfolio/numberManipulator.png"></td>
+						<!-- Middle Column -->
+						<td><img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png"></td>
+						<!-- Right Column -->
+						<td><img id="portfolioImage" src="images/portfolio/tictactoe.png"></td>
+
+					</tr>
+					<!-- Row 2 -->
+					<tr>
+						<!-- Left Column -->
+						<td id="portfolioText">Warriors Walk - C# (Mobile Game with .apk)</td>
+						<!-- Middle Column -->
+						<td id="portfolioText">Jump! - C#</td>
+						<!-- Right Column -->
+						<td id="portfolioText">Shadows - C++</td>						
+					</tr>		
+					<tr>
+						<!-- Left Column -->
+						<td><img id="portfolioImage" src="images/portfolio/warriorsWalk.png"></td>
+						<!-- M,iddle Column -->
+						<td><img id="portfolioImage" src="images/portfolio/jump.png"></td>
+						<!-- Right Column -->
+						<td><img id="portfolioImage" src="images/portfolio/shadows.png"></td>
+					</tr>
+				</table>
+				
+				<p id="round-buttons">
+					<a id="round-button-home" href="/" target="_self"></a>
+					<a id="round-button-portfolio" href="portfolio" target="_self"></a>
+					<a id="round-button-workExperience" href="workExperience" target="_self"></a>
+					<a id="round-button-education" href="education" target="_self"></a>
+					<a id="round-button-photography" href="photography" target="_self"></a>
+				</p>
+			</div>
+		</div>
+    </body>
+</html>
+
+<script type="text/javascript">	
+	/* Manage Page Loading */
+	
+	function hideLoader() {
+		$('#loading').hide();
+		$('#workPortfolio').hide();
+        $('#page').show();
+    }
+
+    // Hide loading spinner
+    $(window).on('load', hideLoader);
+
+    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+	setTimeout(hideLoader, 30000);
+	
+	/* Manage Portfolio Grid Show/Hide */
+
+	function showWorkPortfolio()
+	{
+		$('#educactionPortfolio').hide();
+		$('#workPortfolio').show();
+
+		$('#workSelectorButton').css(
+			{
+				"font-weight": "bold",
+				"text-decoration":"none"
+			});
+		$('#educationSelectorButton').css(
+			{			
+				"font-weight": "normal",
+				"text-decoration":"line-through"
+			});
+	}
+
+	function showEducationPortfolio()
+	{
+		$('#workPortfolio').hide();
+		$('#educactionPortfolio').show();
+
+		$('#educationSelectorButton').css(			
+			{
+				"font-weight": "bold",
+				"text-decoration":"none"
+			}
+			);
+		$('#workSelectorButton').css(
+			{						
+				"font-weight": "normal",
+				"text-decoration":"line-through"
+			});
+	}
+</script>
