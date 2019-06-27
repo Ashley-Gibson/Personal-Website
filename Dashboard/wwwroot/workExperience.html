@@ -2,9 +2,14 @@
 <head>
     <title>Ashley Gibson</title>
 
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
     <link rel="icon" href="images/social/cameraEmoji.png">
+
+    <!-- Import JQuery -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
 
     <!-- Import Fonts -->
     <link href="/styles/fonts/Poiret_One.css" rel="stylesheet">
@@ -18,8 +23,8 @@
     <!-- Import Global CSS -->
     <link href="styles/global.css" rel="stylesheet">
 
-    <!-- Import JQuery -->
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <!-- Import Custom Scripts -->
+    <script src="js/global.js"></script>
 
     <!-- HotJar Tracking Code -->
     <script>
@@ -127,16 +132,3 @@
 		</div>
     </body>
 </html>
-
-<script type="text/javascript">
-    function hideLoader() {
-        $('#loading').hide();
-        $('#page').show();
-    }
-
-    // Hide loading spinner
-    $(window).on('load', hideLoader);
-
-    // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-    setTimeout(hideLoader, 30000);
-</script>
