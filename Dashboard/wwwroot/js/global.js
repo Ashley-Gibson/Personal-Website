@@ -171,19 +171,19 @@ function showPhotography()
 // Left Navigation Arrow Click
 function moveLeft()
 {
-    if(document.getElementById('portfolioContent').style.display != "none")
+    if(document.getElementById('portfolioContent').style.display !== "none")
     {
         window.open("http://www.ashley-gibson.co.uk", "_self");
     }
-    else if(document.getElementById('experienceContent').style.display != "none")
+    else if(document.getElementById('experienceContent').style.display !== "none")
     {        
         animate("right", "nav2", "nav3", "nav4", "nav1", "experienceContent", "portfolioContent");
     }
-    else if(document.getElementById('educationContent').style.display != "none")
+    else if(document.getElementById('educationContent').style.display !== "none")
     {            
         animate("right", "nav3", "nav4", "nav5", "nav2", "educationContent", "experienceContent");
     }
-    else if(document.getElementById('photographyContent').style.display != "none")
+    else if(document.getElementById('photographyContent').style.display !== "none")
     {
         animate("right", "nav4", "nav5", "nav6", "nav3", "photographyContent", "educationContent");       
     }
@@ -192,19 +192,19 @@ function moveLeft()
 // Left Navigation Arrow Click
 function moveRight()
 {
-    if(document.getElementById('portfolioContent').style.display != "none")
+    if(document.getElementById('portfolioContent').style.display !== "none")
     {
         animate("left", "nav1", "nav2", "nav3", "nav4", "portfolioContent", "experienceContent");
     }
-    else if(document.getElementById('experienceContent').style.display != "none")
+    else if(document.getElementById('experienceContent').style.display !== "none")
     {   
         animate("left", "nav2", "nav3", "nav4", "nav5", "experienceContent", "educationContent");    
     }
-    else if(document.getElementById('educationContent').style.display != "none")
+    else if(document.getElementById('educationContent').style.display !== "none")
     {        
         animate("left", "nav3", "nav4", "nav5", "nav6", "educationContent", "photographyContent");
     }
-    else if(document.getElementById('photographyContent').style.display != "none")
+    else if(document.getElementById('photographyContent').style.display !== "none")
     {
         window.open("http://www.ashley-gibson.co.uk", "_self");
     }
@@ -310,7 +310,7 @@ function animate(direction, beforeNav, mainNav, afterNav, nextNav, pageContentDi
         switch(direction)
         {
             case "left":
-                if (mainPosHorizontal <= (parseFloat(originalMainNavPosHorizontal) - 6))
+                if (mainPosHorizontal <= parseFloat(originalMainNavPosHorizontal) - 6)
                 {
                     // Stop Animation
                     clearInterval(navId);
@@ -346,7 +346,7 @@ function animate(direction, beforeNav, mainNav, afterNav, nextNav, pageContentDi
                 }
                 break;
             case "right":
-            if (mainPosHorizontal >= (parseFloat(originalMainNavPosHorizontal) + 6))
+            if (mainPosHorizontal >= parseFloat(originalMainNavPosHorizontal) + 6)
             {
                 // Stop Animation
                 clearInterval(navId);
@@ -389,7 +389,7 @@ function animate(direction, beforeNav, mainNav, afterNav, nextNav, pageContentDi
         switch(direction)
         {
             case "left":
-                if (pageContentPosHorizontal <= (parseFloat(originalPageContentDivPosHorizontal) - 20))
+                if (pageContentPosHorizontal <= parseFloat(originalPageContentDivPosHorizontal) - 20)
                 {
                     // Stop Animation
                     clearInterval(pageContentId);
@@ -413,7 +413,7 @@ function animate(direction, beforeNav, mainNav, afterNav, nextNav, pageContentDi
                 }
                 break;
             case "right":
-                if (pageContentPosHorizontal >= (parseFloat(originalPageContentDivPosHorizontal) + 20))
+                if (pageContentPosHorizontal >= parseFloat(originalPageContentDivPosHorizontal) + 20)
                 {
                     // Stop Animation
                     clearInterval(pageContentId);
