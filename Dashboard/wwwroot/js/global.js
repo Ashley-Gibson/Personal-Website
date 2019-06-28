@@ -12,6 +12,19 @@ function hideLoader()
 // Hide loading spinner
 $(window).on('load', hideLoader);
 
+function slideButtons()
+{
+    if ($('.betaButton') !== null)
+        $('.betaButton').addClass('betaButton-open');
+    if ($('.stableButton') !== null)
+        $('.stableButton').addClass('stableButton-open');
+    if ($('.dashboardButton') !== null)
+        $('.dashboardButton').addClass('dashboardButton-open');
+}
+
+// Slide Buttons
+$(window).on('load', slideButtons);
+
 // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
 setTimeout(hideLoader, 30000);
 

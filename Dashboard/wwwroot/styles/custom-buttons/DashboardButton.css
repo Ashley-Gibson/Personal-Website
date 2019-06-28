@@ -1,0 +1,30 @@
+﻿.dashboardButton {
+    position: fixed;
+    width: 5% !important;
+    height: 7% !important;
+    top: 10%;
+    left: 100%;
+    background-color: #00AFFF;
+    z-index: 99999;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.dashboardButton-open {
+    left: 95%;
+    transition: 0.5s ease-in;
+}
+
+.dashboardButton:hover {
+    background-color: #FF69B4;
+    transition: 0.5s ease-in-out;
+}
+
+.dashboardButton p {
+    text-align: center;
+    padding: 25% 0 0 0;
+    margin: 0;
+    color: #E9E9E9 !important;
+    font-size: 16px;
+    font-weight:bold;
+}

@@ -1,0 +1,36 @@
+﻿.betaButton {
+    position: fixed;
+    width: 5% !important;
+    height: 7% !important;
+    top: 0;
+    left: 100%;
+    background-color: #00AFFF;
+    z-index: 99999;
+    border-bottom-left-radius:20px;
+}
+
+.betaButton-open{
+    left:95%;
+    transition: 0.5s ease-in;
+}
+
+.betaButton:hover {
+    background-color: #FF69B4;
+    transition: 0.5s ease-in-out;
+}
+
+.betaButton p {
+    text-align: center;
+    padding: 10% 0 0 0;
+    margin: 0;
+    color: #E9E9E9 !important;
+}
+
+.beta-newText {
+    font-size: 12px;
+}
+
+.beta-betaText {
+    font-size: 16px;
+    font-weight: bold;
+}

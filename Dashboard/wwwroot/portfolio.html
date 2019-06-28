@@ -23,6 +23,12 @@
     <!-- Import Global CSS -->
     <link href="styles/global.css" rel="stylesheet">
 
+    <!-- Import Beta Button CSS -->
+    <link href="styles/custom-buttons/BetaButton.css" rel="stylesheet">
+
+    <!-- Import Beta Button CSS -->
+    <link href="styles/custom-buttons/DashboardButton.css" rel="stylesheet">
+
     <!-- Import Custom Scripts -->
     <script src="js/global.js"></script>
 
@@ -36,6 +42,7 @@
             r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
     </script>
 </head>
 
@@ -44,13 +51,28 @@
 		<div id="loading"></div>
 
 		<!-- Show/Hide Page -->
-		<div id="page" style="display:none;">
-			<!--CV Download Button -->
-			<div>
-				<a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
-			</div>
+        <div id="page" style="display:none;">
+            <!-- Beta Button -->
+            <a href="content.html">
+                <div class="betaButton">
+                    <p class="beta-newText">New!</p>
+                    <p class="beta-betaText">Beta</p>
+                </div>
+            </a>
 
-	<!-- ***************************** Second Layer - Experience ***************************** -->
+            <!-- Dashboard Button -->
+            <a href="/dashboard">
+                <div class="dashboardButton">
+                    <p class="dashboardButtonText">Dashboard</p>
+                </div>
+            </a>
+
+            <!--CV Download Button -->
+            <div>
+                <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
+            </div>
+
+            <!-- ***************************** Second Layer - Experience ***************************** -->
 
             <div id="secondLayer">
                 <h1 id="secondLayerHeader">
@@ -151,7 +173,7 @@
                     <a id="round-button-photography" href="photography.html" target="_self"></a>
                 </p>
             </div>
-		</div>
+        </div>
     </body>
 </html>
 

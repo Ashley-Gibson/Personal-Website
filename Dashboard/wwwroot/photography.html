@@ -23,6 +23,12 @@
     <!-- Import Global CSS -->
     <link href="styles/global.css" rel="stylesheet">
 
+    <!-- Import Beta Button CSS -->
+    <link href="styles/custom-buttons/BetaButton.css" rel="stylesheet">
+
+    <!-- Import Beta Button CSS -->
+    <link href="styles/custom-buttons/DashboardButton.css" rel="stylesheet">
+
     <!-- Import Custom Scripts -->
     <script src="js/global.js"></script>
 
@@ -45,6 +51,21 @@
         
         <!-- Show/Hide Page -->
         <div id="page" style="display:none">
+            <!-- Beta Button -->
+            <a href="content.html">
+                <div class="betaButton">
+                    <p class="beta-newText">New!</p>
+                    <p class="beta-betaText">Beta</p>
+                </div>
+            </a>
+
+            <!-- Dashboard Button -->
+            <a href="/dashboard">
+                <div class="dashboardButton">
+                    <p class="dashboardButtonText">Dashboard</p>
+                </div>
+            </a>
+
             <!--CV Download Button -->
             <div>
                 <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
