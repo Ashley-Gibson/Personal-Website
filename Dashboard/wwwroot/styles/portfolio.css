@@ -37,19 +37,25 @@
 }
 
 /* Second Layer */
-#portfolioContent{
+#secondLayer{
 	width:100%;
-	height:80%;
-	position: relative;
+	height:100%;
+	position: absolute;
 	margin:auto;
 	padding:0 0 0 0;
 }
 
-#portfolioContent h2{
+#secondLayer h2{
 	color:#228B22;
 	text-align:center;
-	margin-top:0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#secondLayerHeader{
+	text-align:center;
+	width:100%;
+	margin:0 0 0 0;
+	padding:30px 0 0 0;
 }
 
 #portfolioText{
@@ -68,11 +74,27 @@
 	border:0;
 }
 
-#portfolioContent td{
+td{
 	text-align: center;
 }
 
-#portfolioContent table{
+table{
 	display:table;
 	margin:auto;
+}
+
+#round-button-home:hover{
+    background: #ffffff;
+}
+#round-button-portfolio{
+    background: #ffffff !important;
+}
+#round-button-workExperience:hover{
+    background: #ffffff;
+}
+#round-button-education:hover{
+    background: #ffffff;
+}
+#round-button-photography:hover{
+    background: #ffffff;
 }

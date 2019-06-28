@@ -20,25 +20,41 @@
 	z-index: 9999999;
 }
 
-/* Experience Content */
-#experienceContent{
+/* Second Layer */
+#secondLayer{
 	width:100%;
-	height:80%;
+	height:100%;
 	padding:0 0 0 0;
 }
-#experienceContent h1{
+#secondLayer h1{
 	font-size:26px;
 	color:grey;
 	margin:0;
 }
-#experienceContent h2{
+#secondLayer h2{
 	color:#228B22;
 	margin:0;
 }
-#experienceContent ul{
+#secondLayerHeader{
+	position: relative;
+	color:black !important;
+	font-size:32px !important;
+	text-align:center;
+	width:100%;
+	height:10%;
+	margin:0 0 0 0;
+}
+#headerText{
+	width:100%;
+	font-weight:bold;
+	position:relative;
+	margin:auto;
+	padding-top:1.5%;
+}
+ul{
 	line-height: 7px;
 }
-#experienceContent li{
+li{
 	line-height: 20px;
 	font-size:14px;
 }
@@ -77,15 +93,30 @@
 	width: 50%;
 	display: inline-block;
 }
-#experienceContent table{
+table{
 	position: relative;
 	width:100%;
 	height:90%;
 }
-#experienceContent table img{
+table img{
 	max-width:50%;
 }
-#experienceContent td{
+td{
 	position:relative;
 	width:50%;
+}
+#round-button-home:hover{
+    background: #ffffff;
+}
+#round-button-portfolio:hover{
+    background: #ffffff;
+}
+#round-button-workExperience{
+    background: #ffffff !important;
+}
+#round-button-education:hover{
+    background: #ffffff;
+}
+#round-button-photography:hover{
+    background: #ffffff;
 }

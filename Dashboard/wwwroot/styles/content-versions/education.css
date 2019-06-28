@@ -1,0 +1,49 @@
+#educationContent{
+	width:100%;
+	height:80%;
+	position:relative;
+	margin:auto;
+	padding:0 0 0 0;
+}
+
+#educationContent h1{
+	color:grey;
+	margin:0;
+}
+
+#educationContent h2{
+	color:#228B22;
+	margin:0;
+}
+
+#imageColumn1{
+	position: relative;
+	margin-left:20%;
+	margin-top:11%;
+}
+#imageColumn2{
+	position: relative;
+	margin-left:20%;
+	margin-top:3%;
+}
+#educationColText1{
+	position: relative;
+	margin-left:60%;
+	margin-top:10%;
+}
+#educationColText2{
+	position: relative;
+	margin-left:60%;
+	margin-top:3%;
+}
+
+#educationContent td
+{
+	margin-top:5%;
+	margin-left: 25%;
+}
+#educationContent table{
+	position: relative;
+	width:100%;
+	height:90%;
+}

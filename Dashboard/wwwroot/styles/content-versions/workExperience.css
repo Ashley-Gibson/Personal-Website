@@ -20,76 +20,72 @@
 	z-index: 9999999;
 }
 
-/* Third Layer */
-#thirdLayer{
+/* Experience Content */
+#experienceContent{
 	width:100%;
-	height:100%;
-	position:absolute;
-	margin:auto;
+	height:80%;
 	padding:0 0 0 0;
 }
-
-#thirdLayer h1{
+#experienceContent h1{
+	font-size:26px;
 	color:grey;
 	margin:0;
 }
-
-#thirdLayer h2{
+#experienceContent h2{
 	color:#228B22;
 	margin:0;
 }
-
-#thirdLayerHeader{
-	position: absolute;
-	text-align:center;
-	color:black !important;
-	width:100%;
-	margin:0 0 0 0;
-	padding:30px 0 0 0;
+#experienceContent ul{
+	line-height: 7px;
+}
+#experienceContent li{
+	line-height: 20px;
+	font-size:14px;
 }
 #imageColumn1{
-	position: absolute;
-	margin-left:20%;
-	margin-top:11%;
+	position: relative;
+	text-align: center;
+	max-width:30%;
 }
 #imageColumn2{
-	position: absolute;
-	margin-left:20%;
-	margin-top:3%;
+	position: relative;
+	text-align: center;
+	max-width:30%;
 }
-#educationColText1{
-	position: absolute;
-	margin-left:60%;
-	margin-top:10%;
+#imageColumn3{
+	position: relative;
+	text-align: center; 
+	max-width:25%;
 }
-#educationColText2{
-	position: absolute;
-	margin-left:60%;
-	margin-top:3%;
+#experienceColText1{
+	text-align: center;
+	position: relative;
+	width: 50%;
 }
-td
-{
-	margin-top:5%;
-	margin-left: 25%;
+#experienceColText2{
+	text-align: center;
+	position: relative;
+	width: 50%;
 }
-table{
-	position:absolute;
+#experienceColText3{
+	text-align: center;
+	position: relative;
+	width: 50%;
+}
+#experienceRowText{
+	text-align:left;
+	width: 50%;
+	display: inline-block;
+}
+#experienceContent table{
+	position: relative;
 	width:100%;
-	height:100%;
+	height:90%;
 }
-
-#round-button-home:hover{
-    background: #ffffff;
+#experienceContent table img{
+	max-width:50%;
 }
-#round-button-portfolio:hover{
-    background: #ffffff;
-}
-#round-button-workExperience:hover{
-    background: #ffffff;
-}
-#round-button-education{
-    background: #ffffff  !important;
-}
-#round-button-photography:hover{
-    background: #ffffff;
+#experienceContent td{
+	position:relative;
+	width:50%;
 }
