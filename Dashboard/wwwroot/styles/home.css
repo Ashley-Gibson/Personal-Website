@@ -48,13 +48,13 @@ p{
 	#objectContainer{
 		position:absolute;
 		left:15%;
-		top:35%;
+		top:25%;
 		width:400px;
 		height:350px;
 		overflow:hidden;
 		border: 1px solid rgba(0, 0, 0, 0);
 		border-radius:5%;
-		background-color: rgba(146, 145, 145, 0.2);
+		background-color: rgba(146, 145, 145, 0.4);
 	}
 	#line1{
 		text-align:center;
