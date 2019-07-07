@@ -1,0 +1,45 @@
+﻿.footerNav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 90%;
+    width: 26%;
+}
+
+.footerNav-container {
+    padding: 2% 2%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(146, 145, 145, 0.4);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+.footerNav-container a {
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footerNav-container a:hover {
+    color: #4eb5f1;
+}
+
+.footerNav-container a:nth-child(1) {
+    margin: 0;
+}
+
+.footerNav-container a:nth-child(2n+2) {
+    margin: 0 3% 0 3%;
+}
+
+.footerNav-container a:nth-child(5) {
+    margin: 0;
+}
