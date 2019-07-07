@@ -35,9 +35,19 @@
 	text-align: center;
 }
 
-#table{
-	display: table;
-	margin:20px 0 0 30px;
+#tableOuter{
+    padding-top:1%;
+    margin-left:4%;
+}
+
+#photographyTable {
+    margin: 0;
+    padding: 0;
+}
+
+#picGrid {
+    margin: 0;
+    padding: 0;
 }
 
 ul#picGrid{

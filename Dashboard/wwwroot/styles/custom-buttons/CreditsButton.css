@@ -1,36 +1,29 @@
-﻿.betaButton {
+﻿.creditsButton {
     position: fixed;
-    width: 5% !important;
-    height: 7% !important;
-    top: 0;
-    left: 100%;
+    width: 8% !important;
+    height: 8% !important;
+    top: -2.5%;
+    left: 97.5%;
     background-color: #00AFFF;
     z-index: 99999;
-    border-bottom-left-radius:20px;
+    border-radius:100%;
 }
 
-.betaButton-open{
-    left:95%;
+.creditsButton-open {
+    left: 95%;
     transition: 0.5s ease-in;
 }
 
-.betaButton:hover {
+.creditsButton:hover {
     background-color: #FF69B4;
     transition: 0.5s ease-in-out;
 }
 
-.betaButton p {
+.creditsButton p {
     text-align: center;
-    padding: 10% 0 0 0;
+    padding: 27% 20% 0 0;
     margin: 0;
     color: #E9E9E9 !important;
-}
-
-.beta-newText {
-    font-size: 12px;
-}
-
-.beta-betaText {
     font-size: 16px;
     font-weight: bold;
 }
