@@ -59,7 +59,7 @@
 }
 
 #portfolioText{
-	width:400px;
+	width:370px;
 	height:50px;
 	margin:0;
 	padding:0;
@@ -67,8 +67,8 @@
 	font-weight:bold;
 }
 #portfolioImage{
-	width:400px;
-	height:300px;
+	width:370px;
+	height:250px;
 	margin:0;
 	padding:0;
 	border:0;
@@ -81,20 +81,4 @@ td{
 table{
 	display:table;
 	margin:auto;
-}
-
-#round-button-home:hover{
-    background: #ffffff;
-}
-#round-button-portfolio{
-    background: #ffffff !important;
-}
-#round-button-workExperience:hover{
-    background: #ffffff;
-}
-#round-button-education:hover{
-    background: #ffffff;
-}
-#round-button-photography:hover{
-    background: #ffffff;
 }

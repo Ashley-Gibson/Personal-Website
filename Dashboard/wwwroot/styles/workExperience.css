@@ -105,18 +105,3 @@ td{
 	position:relative;
 	width:50%;
 }
-#round-button-home:hover{
-    background: #ffffff;
-}
-#round-button-portfolio:hover{
-    background: #ffffff;
-}
-#round-button-workExperience{
-    background: #ffffff !important;
-}
-#round-button-education:hover{
-    background: #ffffff;
-}
-#round-button-photography:hover{
-    background: #ffffff;
-}
