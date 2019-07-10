@@ -45,54 +45,65 @@
     </script>
 </head>
 
-    <body>
-        <!-- Loading Spinner -->
-        <div id="loading"></div>
-        
-        <div id="page" style="display:none;">
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading"></div>
 
-            <!-- Credits Button -->
-            <a href="credits.html" target="_blank">
-                <div class="creditsButton">
-                    <p class="creditsButton-text">Credits</p>
-                </div>
-            </a>
+    <div id="page" style="display:none;">
 
-            <!-- Dashboard Button -->
-            <a href="/dashboard">
-                <div class="dashboardButton">
-                    <p class="dashboardButtonText">Dashboard</p>
-                </div>
-            </a>
-
-            <div id="objectContainer">
-                <p id="line1">Hey, I'm</p>
-                <p id="line2">Ashley Gibson</p>
-                <p id="line3">Junior Developer - <b><a href="https://www.quba.co.uk" target="_blank">QUBA</a></b></p>
-
-                <p id="socialRow">
-                    <a href="http://www.facebook.com/ashdgibson" target="_blank"><img src="images/social/facebookNew.png" alt="Facebook"></a>
-                    <a href="http://www.linkedin.com/in/ashleydgibson" target="_blank"><img src="images/social/linkedInNew.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/gibbo_photos" target="_blank"><img src="images/social/instagramNew.png" alt="Instagram"></a>
-                    <a href="https://www.twitter.com/gibbo_photos" target="_blank"><img src="images/social/twitterNew.png" alt="Twitter"></a>
-                    <a href="mailto:ash.gibson@hotmail.co.uk" target="_self"><img src="images/social/mailNew.png" alt="Email"></a>
-                </p>
-
-                <div class="homeNav">
-                    <div class="homeNav-container">
-                        <a class="homeNav-home" href="/">Home</a>
-                        <a class="homeNav-portfolio" href="portfolio.html">Portfolio</a>
-                        <a class="homeNav-workExperience" href="workExperience.html">Work Experience</a>
-                        <a class="homeNav-education" href="education.html">Education</a>
-                        <a class="homeNav-photgraphy" href="photography.html">Photography</a>
-                    </div>
-                </div>
-
-                <!-- CV Download Button -->
-                <p id="CVParent">
-                    <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
-                </p>
-            </div>
+        <!-- Home Navigation for Mobile -->
+        <div class="homeNav--mobile">
+            <ul class="homeNav-container--mobile">
+                <li><a class="homeNav-home--mobile" href="/">Home</a></li>
+                <li><a class="homeNav-portfolio--mobile" href="portfolio.html">Portfolio</a></li>
+                <li><a class="homeNav-workExperience--mobile" href="workExperience.html">Work Experience</a></li>
+                <li><a class="homeNav-education--mobile" href="education.html">Education</a></li>
+                <li><a class="homeNav-photgraphy--mobile" href="photography.html">Photography</a></li>
+            </ul>
         </div>
-    </body>
+
+        <!-- Credits Button -->
+        <a class="creditsAnchor" href="credits.html" target="_blank">
+            <div class="creditsButton">
+                <p class="creditsButton-text">Credits</p>
+            </div>
+        </a>
+
+        <!-- Dashboard Button -->
+        <a class="dashboardAnchor" href="/dashboard">
+            <div class="dashboardButton">
+                <p class="dashboardButtonText">Dashboard</p>
+            </div>
+        </a>
+
+        <div id="objectContainer">
+            <p id="line1">Hey, I'm</p>
+            <p id="line2">Ashley Gibson</p>
+            <p id="line3">Junior Developer - <b><a href="https://www.quba.co.uk" target="_blank">QUBA</a></b></p>
+
+            <p id="socialRow">
+                <a href="http://www.facebook.com/ashdgibson" target="_blank"><img src="images/social/facebookNew.png" alt="Facebook"></a>
+                <a href="http://www.linkedin.com/in/ashleydgibson" target="_blank"><img src="images/social/linkedInNew.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/gibbo_photos" target="_blank"><img src="images/social/instagramNew.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com/gibbo_photos" target="_blank"><img src="images/social/twitterNew.png" alt="Twitter"></a>
+                <a href="mailto:ash.gibson@hotmail.co.uk" target="_self"><img src="images/social/mailNew.png" alt="Email"></a>
+            </p>
+
+            <div class="homeNav">
+                <div class="homeNav-container">
+                    <a class="homeNav-home" href="/">Home</a>
+                    <a class="homeNav-portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="homeNav-workExperience" href="workExperience.html">Work Experience</a>
+                    <a class="homeNav-education" href="education.html">Education</a>
+                    <a class="homeNav-photgraphy" href="photography.html">Photography</a>
+                </div>
+            </div>
+
+            <!-- CV Download Button -->
+            <p id="CVParent">
+                <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
+            </p>
+        </div>
+    </div>
+</body>
 </html>
