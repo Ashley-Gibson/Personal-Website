@@ -30,16 +30,6 @@ setTimeout(hideLoader, 30000);
 // Determine which Nav elements appear and style them appropriately
 function initNavBar()
 {
-    // Determine Nav to show based on screen size
-    if ($(window).width() < 1024) {
-        $('homeNav').css({ "display": "none" });
-        $('mobileNav').css({ "display": "block" });
-    }
-    else {
-        $('homeNav').css({ "display": "block" });
-        $('mobileNav').css({ "display": "none" });
-    }
-
     // Hide Page Content
     $('#experienceContent').css({"display":"none"});
     $('#educationContent').css({"display":"none"});
