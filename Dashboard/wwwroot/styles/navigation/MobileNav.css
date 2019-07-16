@@ -45,7 +45,7 @@
         position: fixed;
         left: 3%;
         top: 2%;
-        z-index: 1;
+        z-index: 98;
     }
 
     .mobileBurgerMenu:hover {

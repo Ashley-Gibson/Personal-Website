@@ -27,3 +27,19 @@
     font-size: 16px;
     font-weight:bold;
 }
+
+@media screen and (max-width:768px) {
+    .dashboardButton {
+        width:30% !important;
+        top: 80% !important;
+        left: 60% !important;
+    }
+
+    .dashboardButton-open {
+        left: 60% !important;
+    }
+
+    .dashboardButton p {
+        padding: 15% 0 0 5% !important;
+    }
+}

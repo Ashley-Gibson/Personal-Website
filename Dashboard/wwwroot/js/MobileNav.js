@@ -5,5 +5,5 @@
 
 function hideMobileNav() {
     $('.mobileNav').css('display', 'none');
-    $('.close').css('display', 'none');
+    $('.close').css('display', 'none');    
 }
