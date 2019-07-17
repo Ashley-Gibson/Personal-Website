@@ -177,7 +177,7 @@ p{
 		font-style: italic;
 		color:white;
 		position:absolute;
-		top:55%;
+		top:5%;
 		padding:0 0 0 0;
 		height:auto\9;
 	}
@@ -188,18 +188,18 @@ p{
 		font-size: 30px;
 		color:white;
 		position:absolute;
-		top:61%;	
+		top:20%;	
 		padding: 0 0 0 0;
 		height:auto\9;
 	}
 	#line3{
 		text-align: center;
-		width:105%;
+		width:100%;
 		margin:auto;
 		font-size:25px;
 		text-decoration: none;
 		position:absolute;
-		top:68%;	
+		top:40%;	
 		padding: 0 0 0 0;
 		height:auto\9;
 	}
@@ -212,7 +212,7 @@ p{
 		margin:auto;
 		text-decoration: none;
 		position:absolute;
-		top:75%;	
+		top:60%;	
 		padding: 0 0 0 0;
 		height:auto\9;
 	}
@@ -223,9 +223,14 @@ p{
 		height:auto\9;
 	}
 	#socialRow img{
-		width:19px;
-		height:19px;
+		width:40px;
+		height:40px;
 	}
+    #CVParent {
+        position: absolute;
+        top: 78%;
+        left:20%;
+    }
     .fixedCVButton {
         background-color: #4eb5f1;
         display: block;
@@ -241,7 +246,6 @@ p{
         text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
         transition: all 0.2s;
         z-index: 5;
-        position: relative;
         width: 180px;
     }
 }
