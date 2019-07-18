@@ -152,11 +152,10 @@ p{
 /* Mobile Screen - Portrait */
 @media screen and (max-width: 900px) and (orientation:portrait)
 {
-    body{
-        background-position-x:69%;
-        background-position-y:0%;
-        background-size:297% !important;
-        font-size:0.8em;
+    body {
+        background-image: url('/images/camera/meLakeMobile.jpg') !important;
+        object-fit: fill;
+        font-size: 0.8em;
     }
     #objectContainer {
         position: absolute;
