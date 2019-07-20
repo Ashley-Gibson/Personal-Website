@@ -30,9 +30,10 @@
 
 @media screen and (max-width:768px) {
     .dashboardButton {
-        width:30% !important;
+        width: 30% !important;
         top: 80% !important;
         left: 60% !important;
+        border-radius: 20px !important;
     }
 
     .dashboardButton-open {

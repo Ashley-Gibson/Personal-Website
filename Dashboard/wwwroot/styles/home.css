@@ -3,7 +3,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 100%;
     color: #000000;
-    background-image: url('/images/camera/meLake.jpg');
+    background-image: url('/images/backgrounds/meLake.jpg');
     background-position:center;
     background-repeat:no-repeat;
     padding: 0;
@@ -149,12 +149,12 @@ p{
     }
 }
 
-/* Mobile Screen - Portrait */
+/* iPhone 6/7/8 - Portrait */
 @media screen and (max-width: 900px) and (orientation:portrait)
 {
     body {
-        background-image: url('/images/camera/meLakeMobile.jpg') !important;
-        object-fit: fill;
+        background-image: url('/images/backgrounds/meLakeMobile.jpg') !important;
+        background-size:cover;
         font-size: 0.8em;
     }
     #objectContainer {
@@ -194,13 +194,8 @@ p{
 	#line3{
 		text-align: center;
 		width:100%;
-		margin:auto;
 		font-size:25px;
-		text-decoration: none;
-		position:absolute;
 		top:40%;	
-		padding: 0 0 0 0;
-		height:auto\9;
 	}
 	#line3:hover a{
 		color:#808080;
