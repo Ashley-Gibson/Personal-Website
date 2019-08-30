@@ -80,7 +80,7 @@ using Website.Models;
             WriteLiteral("\r\n<div class=\"overlay\"></div>\r\n\r\n<div class=\"myWebsiteLink\">\r\n    <a class=\"myWebsiteLink-text\" href=\"/\" target=\"_self\">\r\n        <p>My Website</p>\r\n    </a>\r\n    <a class=\"myWebsiteLink-icon\" href=\"/\" target=\"_self\">\r\n        ");
             EndContext();
             BeginContext(288, 174, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("object", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bc690cfb90148c7ab3a6ed45ceecab7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("object", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "044b47d6fb254b7283dbbe7c328f13a4", async() => {
                 BeginContext(396, 57, true);
                 WriteLiteral("\r\n            Your browser does not support SVG\r\n        ");
                 EndContext();
@@ -159,7 +159,7 @@ using Website.Models;
             WriteLiteral("cript:void(0)\" onclick=\"toggleDashboardInfoPopup()\">\r\n        ");
             EndContext();
             BeginContext(2572, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("object", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9e3f39e6fd448218032f789a3d2a07e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("object", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15e430e414d647acaa0ed0ceba34bd9c", async() => {
                 BeginContext(2687, 57, true);
                 WriteLiteral("\r\n            Your browser does not support SVG\r\n        ");
                 EndContext();
@@ -193,7 +193,7 @@ using Website.Models;
                 ");
             EndContext();
             BeginContext(3014, 255, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f40ac44a0c0849b9b74a22aeb1924ce4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "556f931e4c1e4949ba1143a7f37c81d6", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -216,7 +216,7 @@ using Website.Models;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-md-4\">\r\n            <p class=\"widgetTitle\">Nested Circles</p>\r\n            <div class=\"col-md-12 widgetContainer widgetTwo\" id=\"widgetTwo\">\r\n                ");
             EndContext();
             BeginContext(3490, 272, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e5a2e1b761704b839ba174420f8870f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "387486dd01ee45efa4d8d85efc1a6c4e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -239,7 +239,7 @@ using Website.Models;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"col-md-4\">\r\n            <p class=\"widgetTitle\">Pie Chart</p>\r\n            <div class=\"col-md-12 widgetContainer widgetThree\" id=\"widgetThree\">\r\n                ");
             EndContext();
             BeginContext(3982, 262, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b7fe8e5ef0d4788a3366f7612061dcc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("iframe", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02ecf9431a034ec8a840d5996af6d35f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
