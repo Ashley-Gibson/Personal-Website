@@ -62,3 +62,37 @@ C:\Users\Ash\Desktop\Personal-Website\Dashboard\obj\Release\netcoreapp2.1\Dashbo
 C:\Users\Ash\Desktop\Personal-Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.csproj.CopyComplete
 C:\Users\Ash\Desktop\Personal-Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.dll
 C:\Users\Ash\Desktop\Personal-Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.pdb
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\appsettings.Development.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\appsettings.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.deps.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.runtimeconfig.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.runtimeconfig.dev.json
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.dll
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.pdb
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.Views.dll
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\Dashboard.Views.pdb
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\PersonalWebsiteDashboard.dll
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\PersonalWebsiteDashboard.pdb
+C:\_Project Code\Personal Website\Dashboard\bin\Release\netcoreapp2.1\PersonalWebsiteDashboard.dll.config
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.csprojAssemblyReference.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.RazorAssemblyInfo.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.RazorAssemblyInfo.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.AssemblyInfoInputs.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.AssemblyInfo.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.TagHelpers.input.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.TagHelpers.output.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.RazorCoreGenerate.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.RazorTargetAssemblyInfo.cache
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.RazorTargetAssemblyInfo.cs
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.Views.pdb
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.csproj.CopyComplete
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.dll
+C:\_Project Code\Personal Website\Dashboard\obj\Release\netcoreapp2.1\Dashboard.pdb
