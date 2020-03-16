@@ -4428,3 +4428,6 @@ Dashboard/obj/Release/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
 Dashboard/obj/Release/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
 PersonalWebsiteDashboard/PersonalWebsiteDashboard.csproj.user
 PersonalWebsiteDashboard/obj/Release/PersonalWebsiteDashboard.pdb
+Dashboard/obj/
+Dashboard/bin/Release/
+Dashboard/.config/dotnet-tools.json
