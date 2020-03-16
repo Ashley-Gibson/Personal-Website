@@ -5,7 +5,6 @@ function hideLoader()
     $('#workPortfolio').hide();
     $('#page').show();
 
-    // Initialise Navigation Bar
     initNavBar();
 }
 

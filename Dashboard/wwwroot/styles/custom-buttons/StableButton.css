@@ -27,3 +27,15 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+@media screen and (max-width:768px) {
+    .stableButton {
+        top: 95% !important;
+        left: 0% !important;
+        border-radius:20px !important;
+    }
+
+    .stableButton-open {
+        left: 5% !important;
+    }
+}

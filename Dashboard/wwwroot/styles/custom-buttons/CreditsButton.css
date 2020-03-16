@@ -28,3 +28,20 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+@media screen and (max-width:768px) {
+    .creditsButton {
+        width: 30% !important;
+        top: 80% !important;
+        left: 10% !important;
+        border-radius: 20px !important;
+    }
+
+    .creditsButton-open {
+        left: 10% !important;
+    }
+
+    .creditsButton p {
+        padding: 15% 1% 0 0 !important;
+    }
+}
