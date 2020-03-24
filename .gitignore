@@ -4431,3 +4431,5 @@ PersonalWebsiteDashboard/obj/Release/PersonalWebsiteDashboard.pdb
 Dashboard/obj/
 Dashboard/bin/Release/
 Dashboard/.config/dotnet-tools.json
+Personal Website/Bin/roslyn/
+.vs/
