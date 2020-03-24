@@ -1,4 +1,4 @@
-﻿.dashboardButton {
+﻿.dashboardButton, .dashboardAnchor {
     display:none;
     position: fixed;
     width: 8% !important;
@@ -30,7 +30,8 @@
 }
 
 @media screen and (max-width:768px) {
-    .dashboardButton {
+    .dashboardButton, .dashboardAnchor {
+        display:none;
         width: 30% !important;
         top: 80% !important;
         left: 60% !important;
