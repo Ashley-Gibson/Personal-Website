@@ -105,3 +105,10 @@ td{
 	position:relative;
 	width:50%;
 }
+
+/* iPhone 6/7/8 - Portrait */
+@media screen and (max-width: 900px) and (orientation:portrait) {
+	#secondLayerHeader {
+		margin: 40px 0 0 0;
+	}
+}

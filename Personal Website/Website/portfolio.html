@@ -23,8 +23,10 @@
     <!-- Import Global CSS -->
     <link href="styles/global.css" rel="stylesheet">
 
-    <!-- Import Nav Bar -->
+    <!-- Navigation -->
     <link href="styles/navigation/FooterNav.css" rel="stylesheet">
+    <link href="styles/navigation/MobileNav.css" rel="stylesheet">
+    <script src="js/MobileNav.js" type="text/javascript"></script>
 
     <!-- Import Beta Button CSS -->
     <link href="styles/custom-buttons/CreditsButton.css" rel="stylesheet">
@@ -47,7 +49,7 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
 
-/**/</script>
+        /**/</script>
 </head>
 
     <body>
@@ -58,23 +60,42 @@
         <div id="page" style="display:none;">
 
             <!-- Credits Button -->
-            <a class="creditsAnchor" href="credits.html" target="_blank">
-                <div class="creditsButton">
-                    <p class="creditsButton-text">Credits</p>
-                </div>
-            </a>
+            <!--<a class="creditsAnchor" href="credits.html" target="_blank">
+            <div class="creditsButton">
+                <p class="creditsButton-text">Credits</p>
+            </div>
+            </a>-->
 
             <!-- Dashboard Button -->
-            <a class="dashboardAnchor" href="/dashboard">
-                <div class="dashboardButton">
-                    <p class="dashboardButtonText">Dashboard</p>
-                </div>
-            </a>
+            <!--<a class="dashboardAnchor" href="/dashboard">
+            <div class="dashboardButton">
+                <p class="dashboardButtonText">Dashboard</p>
+            </div>
+            </a>-->
 
             <!--CV Download Button -->
             <div>
                 <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
             </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobileNav" style="display:none;">
+                <ul class="mobileNav-container">
+                    <li><a class="mobileNav-home" href="/">Home</a></li>
+                    <li><a class="mobileNav-portfolio" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="mobileNav-workExperience" href="experience.html">Experience</a></li>
+                    <li><a class="mobileNav-education" href="education.html">Education</a></li>
+                    <li><a class="mobileNav-photgraphy" href="photography.html">Photography</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Burger Menu Icon -->
+            <div class="mobileBurgerMenu">
+                <img src="images/navigation/burger.png" width="30" height="30" onclick="showMobileNav()" />
+            </div>
+
+            <!-- Mobile Close Menu Icon -->
+            <div class="close" onclick="hideMobileNav()"></div>
 
             <!-- ***************************** Second Layer - Experience ***************************** -->
 
@@ -93,81 +114,73 @@
                     <a title="Coming soon..." id="workSelectorButton" onclick="">Work</a>
                 </div>
 
-                <table id="workPortfolio">
-                    <!-- Row 1 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="portfolioText">Work 1</td>
-                        <!-- Middle Column -->
-                        <td id="portfolioText">Work 2</td>
-                        <!-- Right Column -->
-                        <td id="portfolioText">Work 3</td>
-                    </tr>
-                    <tr>
-                        <!-- Left Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/numberManipulator.png"></td>
-                        <!-- Middle Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png"></td>
-                        <!-- Right Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/tictactoe.png"></td>
+                <div id="workPortfolio">
 
-                    </tr>
-                    <!-- Row 2 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="portfolioText">Work 4</td>
-                        <!-- Middle Column -->
-                        <td id="portfolioText">Work 5</td>
-                        <!-- Right Column -->
-                        <td id="portfolioText">Work 6</td>
-                    </tr>
-                    <tr>
-                        <!-- Left Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/warriorsWalk.png"></td>
-                        <!-- M,iddle Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/jump.png"></td>
-                        <!-- Right Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/shadows.png"></td>
-                    </tr>
-                </table>
+                    <div id="portfolioItem">
+                        <p>Number Manipulator - C#.NET</p>
+                        <img id="portfolioImage" src="images/portfolio/numberManipulator.png">
+                    </div>
 
-                <table id="educationPortfolio">
-                    <!-- Row 1 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="portfolioText">Number Manipulator - C#.NET</td>
-                        <!-- Middle Column -->
-                        <td id="portfolioText">Spot and the Zombies - C++</td>
-                        <!-- Right Column -->
-                        <td id="portfolioText">Tic Tac Toe - C++</td>
-                    </tr>
-                    <tr>
-                        <!-- Left Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/numberManipulator.png"></td>
-                        <!-- Middle Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png"></td>
-                        <!-- Right Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/tictactoe.png"></td>
+                    <div id="portfolioItem">
+                        <p>Spot and the Zombies - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png">
+                    </div>
 
-                    </tr>
-                    <!-- Row 2 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="portfolioText">Warriors Walk - C# (Mobile Game with .apk)</td>
-                        <!-- Middle Column -->
-                        <td id="portfolioText">Jump! - C#</td>
-                        <!-- Right Column -->
-                        <td id="portfolioText">Shadows - C++</td>
-                    </tr>
-                    <tr>
-                        <!-- Left Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/warriorsWalk.png"></td>
-                        <!-- M,iddle Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/jump.png"></td>
-                        <!-- Right Column -->
-                        <td><img id="portfolioImage" src="images/portfolio/shadows.png"></td>
-                    </tr>
-                </table>
+                    <div id="portfolioItem">
+                        <p>Tic Tac Toe - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/tictactoe.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Warriors Walk - C# (Mobile Game with .apk)</p>
+                        <img id="portfolioImage" src="images/portfolio/warriorsWalk.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Jump! - C#</p>
+                        <img id="portfolioImage" src="images/portfolio/jump.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Shadows - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/shadows.png">
+                    </div>
+
+                </div>
+
+                <div id="educationPortfolio">
+
+                    <div id="portfolioItem">
+                        <p>Number Manipulator - C#.NET</p>
+                        <img id="portfolioImage" src="images/portfolio/numberManipulator.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Spot and the Zombies - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Tic Tac Toe - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/tictactoe.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Warriors Walk - C# (Mobile Game with .apk)</p>
+                        <img id="portfolioImage" src="images/portfolio/warriorsWalk.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Jump! - C#</p>
+                        <img id="portfolioImage" src="images/portfolio/jump.png">
+                    </div>
+
+                    <div id="portfolioItem">
+                        <p>Shadows - C++</p>
+                        <img id="portfolioImage" src="images/portfolio/shadows.png">
+                    </div>
+
+                </div>
 
                 <div class="footerNav">
                     <div class="footerNav-container">
