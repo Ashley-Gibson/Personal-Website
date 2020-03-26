@@ -1,0 +1,52 @@
+﻿.creditsAnchor {
+    position: fixed;
+    top: -2.5%;
+    left: 97.5%;
+    width: 8% !important;
+    height: 8% !important;
+}
+.creditsButton{ 
+    position:relative;
+    width:100% !important;
+    height:100% !important;
+    background-color: #00AFFF;
+    z-index: 99999;
+    border-radius: 40%;
+    color: #E9E9E9;
+}
+
+.creditsButton-open {
+    transition: 0.5s ease-in;
+}
+
+.creditsButton:hover {
+    background-color: #FF69B4;
+    transition: 0.5s ease-in-out;
+    color:black !important;
+}
+
+.creditsButton p {
+    text-align: center;
+    padding: 27% 30% 0 0;
+    margin: 0;    
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:968px) {
+    .creditsButton {
+        border-radius: 20px !important;
+    }
+    .creditsAnchor {
+        top: 70% !important;
+        left: 50% !important;
+        margin:auto !important;
+        margin-left:-20% !important;
+        width:40% !important;
+        height:6% !important;
+    }
+
+    .creditsButton p {
+        padding: 7% 1% 0 0 !important;
+    }
+}

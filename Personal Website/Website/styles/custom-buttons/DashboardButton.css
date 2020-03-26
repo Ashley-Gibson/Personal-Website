@@ -1,0 +1,48 @@
+﻿.dashboardButton, .dashboardAnchor {
+    display:none;
+    position: fixed;
+    width: 8% !important;
+    height: 8% !important;
+    top: -2.5%;
+    left: -5%;
+    background-color: #00AFFF;
+    z-index: 99999;
+    border-radius: 100%;
+}
+
+.dashboardButton-open {
+    left: -2.5%;
+    transition: 0.5s ease-in;
+}
+
+.dashboardButton:hover {
+    background-color: #FF69B4;
+    transition: 0.5s ease-in-out;
+}
+
+.dashboardButton p {
+    text-align: center;
+    padding: 27% 0 0 20%;
+    margin: 0;
+    color: #E9E9E9 !important;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+@media screen and (max-width:768px) {
+    .dashboardButton, .dashboardAnchor {
+        display:none;
+        width: 30% !important;
+        top: 80% !important;
+        left: 60% !important;
+        border-radius: 20px !important;
+    }
+
+    .dashboardButton-open {
+        left: 60% !important;
+    }
+
+    .dashboardButton p {
+        padding: 15% 0 0 5% !important;
+    }
+}

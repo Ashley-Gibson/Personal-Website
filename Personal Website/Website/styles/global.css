@@ -1,0 +1,79 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+	font-size:100%;
+	color:#000000;
+	background-color:#e9e9e9;
+	padding: 0;
+	margin: 0;
+	width:100%;
+	height:100%;
+}
+
+/* Show Cursor hand on Anchor element hover */
+a, a label {
+    cursor: pointer;
+}
+
+/* Non-Mobile */
+@media screen and (min-width:481px)
+{
+    .fixedCVButton {
+        background-color: #4eb5f1;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        padding: 0.3em 1.2em;
+        margin-left:-90px;
+        border: 0.16em solid rgba(255,255,255,0);
+        border-radius: 2em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Quicksand',sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+        text-align: center;
+        transition: all 0.2s;
+        z-index: 5;
+        position: fixed;
+        top: 95%;
+        left:50%;
+        width: 180px;
+    }
+
+    .fixedCVButton:hover
+    {
+        background-color:#4095c6;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:480px)
+{
+    .fixedCVButton
+    {
+        background-color:#4eb5f1;
+        display:block;
+        padding:0.3em 1.2em;
+        border:0.16em solid rgba(255,255,255,0);
+        border-radius:2em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Quicksand',sans-serif;
+        font-weight:300;
+        color:#FFFFFF;
+        text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+        text-align:center;
+        transition: all 0.2s;
+        z-index:5;
+        position:fixed;
+        width:50%;
+        left:28%;
+        top:85%;
+    }
+
+    .fixedCVButton:hover
+    {
+        background-color:#4095c6;
+    }
+}
