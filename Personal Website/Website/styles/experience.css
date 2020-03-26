@@ -58,55 +58,45 @@ li{
 	line-height: 20px;
 	font-size:14px;
 }
-#imageColumn1{
-	position: relative;
-	text-align: center;
-	max-width:30%;
-}
-#imageColumn2{
-	position: relative;
-	text-align: center;
-	max-width:30%;
-}
-#imageColumn3{
-	position: relative;
-	text-align: center; 
-	max-width:25%;
-}
-#experienceColText1{
-	text-align: center;
-	position: relative;
-	width: 50%;
-}
-#experienceColText2{
-	text-align: center;
-	position: relative;
-	width: 50%;
-}
-#experienceColText3{
-	text-align: center;
-	position: relative;
-	width: 50%;
-}
-#experienceRowText{
-	text-align:left;
-	width: 50%;
-	display: inline-block;
-}
-table{
-	position: relative;
-	width:100%;
-	height:90%;
-}
-table img{
-	max-width:50%;
-}
-td{
+
+.experienceTable{
 	position:relative;
-	width:50%;
+	display:flex;
+	flex-direction:column;
 }
 
-/* iPhone 6/7/8 - Portrait */
+.experienceItem{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:80%;
+	height:30%;
+	margin:auto;
+}
+
+.experienceImage{
+	width: 60%;
+	height:100%;
+	margin:auto;
+}
+
+.experienceImageAnchor {
+	width: 100%;
+	height: 100% !important;
+}
+
+.experienceImage img{
+	width:50%;
+	height:auto;
+}
+
+.experienceText{
+	text-align:left;
+	width: 30%;
+	height:100%;
+}
+
+/* Mobile - Portrait */
 @media screen and (max-width: 900px) and (orientation:portrait) {
 	#secondLayerHeader {
 		margin: 40px 0 0 0;
