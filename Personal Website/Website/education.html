@@ -1,52 +1,54 @@
 <html>
-<head>
-    <title>Ashley Gibson - About Me</title>
+    <head>
+        <title>Ashley Gibson - About Me</title>
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/social/cameraEmoji.png">
+        <!-- Favicon -->
+        <link rel="icon" href="images/social/cameraEmoji.png">
 
-    <!-- Import JQuery -->
-    <script src="lib/jquery/dist/jquery.min.js"></script>
+        <!-- Import JQuery -->
+        <script src="lib/jquery/dist/jquery.min.js"></script>
 
-    <!-- Import Fonts -->
-    <link href="styles/fonts/Poiret_One.css" rel="stylesheet">
-    <link href="styles/fonts/Open_Sans.css" rel="stylesheet">
-    <link href="styles/fonts/Quicksand.css" rel="stylesheet">
-    <link href="styles/fonts/Brandon-Grotesque.css" rel="stylesheet">
+        <!-- Import Fonts -->
+        <link href="styles/fonts/Poiret_One.css" rel="stylesheet">
+        <link href="styles/fonts/Open_Sans.css" rel="stylesheet">
+        <link href="styles/fonts/Quicksand.css" rel="stylesheet">
+        <link href="styles/fonts/Brandon-Grotesque.css" rel="stylesheet">
 
-    <!-- Import Main CSS -->
-    <link href="styles/education.css" rel="stylesheet">
+        <!-- Import Main CSS -->
+        <link href="styles/education.css" rel="stylesheet">
 
-    <!-- Import Global CSS -->
-    <link href="styles/global.css" rel="stylesheet">
+        <!-- Import Global CSS -->
+        <link href="styles/global.css" rel="stylesheet">
 
-    <!-- Import Nav Bar -->
-    <link href="styles/navigation/FooterNav.css" rel="stylesheet">
+        <!-- Import Navigation -->
+        <link href="styles/navigation/FooterNav.css" rel="stylesheet">
+        <link href="styles/navigation/MobileNav.css" rel="stylesheet">
+        <script src="js/MobileNav.js" type="text/javascript"></script>
 
-    <!-- Import Beta Button CSS -->
-    <link href="styles/custom-buttons/CreditsButton.css" rel="stylesheet">
+        <!-- Import Beta Button CSS -->
+        <link href="styles/custom-buttons/CreditsButton.css" rel="stylesheet">
 
-    <!-- Import Beta Button CSS -->
-    <link href="styles/custom-buttons/DashboardButton.css" rel="stylesheet">
+        <!-- Import Beta Button CSS -->
+        <link href="styles/custom-buttons/DashboardButton.css" rel="stylesheet">
 
-    <!-- Import Custom Scripts -->
-    <script src="js/global.js"></script>
+        <!-- Import Custom Scripts -->
+        <script src="js/global.js"></script>
 
-    <!-- HotJar Tracking Code -->
-    <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-            h._hjSettings = { hjid: 1238566, hjsv: 6 };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script'); r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-</head>
+        <!-- HotJar Tracking Code -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                h._hjSettings = { hjid: 1238566, hjsv: 6 };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script'); r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+    </head>
 
     <body>
 		<!-- Loading Spinner -->
@@ -56,18 +58,36 @@
         <div id="page" style="display:none">
 
             <!-- Credits Button -->
-            <a class="creditsAnchor" href="credits.html" target="_blank">
-                <div class="creditsButton">
-                    <p class="creditsButton-text">Credits</p>
-                </div>
-            </a>
+            <!--<a class="creditsAnchor" href="credits.html" target="_blank">
+            <div class="creditsButton">
+                <p class="creditsButton-text">Credits</p>
+            </div>
+            </a>-->
+                    <!-- Dashboard Button -->
+                    <!--<a class="dashboardAnchor" href="/dashboard">
+            <div class="dashboardButton">
+                <p class="dashboardButtonText">Dashboard</p>
+            </div>
+            </a>-->
 
-            <!-- Dashboard Button -->
-            <a class="dashboardAnchor" href="/dashboard">
-                <div class="dashboardButton">
-                    <p class="dashboardButtonText">Dashboard</p>
-                </div>
-            </a>
+            <!-- Mobile Navigation -->
+            <div class="mobileNav" style="display:none;">
+                <ul class="mobileNav-container">
+                    <li><a class="mobileNav-home" href="/">Home</a></li>
+                    <li><a class="mobileNav-portfolio" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="mobileNav-workExperience" href="experience.html">Experience</a></li>
+                    <li><a class="mobileNav-education" href="education.html">Education</a></li>
+                    <li><a class="mobileNav-photgraphy" href="photography.html">Photography</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Burger Menu Icon -->
+            <div class="mobileBurgerMenu">
+                <img src="images/navigation/burger.png" width="30" height="30" onclick="showMobileNav()" />
+            </div>
+
+            <!-- Mobile Close Menu Icon -->
+            <div class="close" onclick="hideMobileNav()"></div>
 
             <!--CV Download Button -->
             <div>
@@ -75,58 +95,47 @@
             </div>
 
             <div id="thirdLayer">
-                <h1 id="thirdLayerHeader">
-                    Here's what I've learnt...
-                </h1>
+                <div id="thirdLayerHeader">
+                    <div id="headerText">Here's what I've learnt...</div>
+                </div>
 
-                <table>
-                    <!-- Row 1 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="imageColumn1" width="450px" height="200px"><a href="http://www.shu.ac.uk" target="_blank"><img id="educationGridItem1" src="images/education/SHU.png" width="450px" height="200px"></a></td>
-                        <!-- Right Column -->
-                        <td id="educationColText1" width="450px" height="200px">
+                <div class="educationTable">
 
+                    <div class="educationItem">
+                        <div class="educationImage">
+                            <a class="educationImageAnchor" href="http://www.shu.ac.uk" target="_blank">
+                                <img src="images/education/SHU.png">
+                            </a>
+                        </div>
+                        <div class="educationText">
                             <h1>Sheffield Hallam University</h1>
-
                             <h2>BSc (Hons) Computer Science for Games</h2>
+                            <ul>
+                                <li>Programming languages: C++, C#, C for Robotics, VB, JavaScript, HTML, CSS, PHP, SQL, Python and Assembly</li>
+                                <li>Software used: Visual Studio, Unity</li>
+                                <li>Source Control: Bitbucket with Source Tree</li>
+                                <li>Download my <a href="/docs/Portfolio.zip">Portfolio</a> or view my <a href="https://github.com/Ashley-Gibson" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                            <p id="educationRowText" width="450px" height="200px">
-                                <ul>
-                                    <li>Programming languages: C++, C#, C for Robotics, VB, JavaScript, HTML, CSS, PHP, SQL, Python and Assembly</li>
-                                    <br>
-                                    <li>Software used: Visual Studio, Unity</li>
-                                    <br>
-                                    <li>Source Control: Bitbucket with Source Tree</li>
-                                    <br>
-                                    <li>Download my <a href="docs/Portfolio.zip">Portfolio</a> or view my <a href="https://github.com/Ashley-Gibson" target="_blank">GitHub</a></li>
-                                </ul>
-                            </p>
-                        </td>
-                    </tr>
-                    <!-- Row 2 -->
-                    <tr>
-                        <!-- Left Column -->
-                        <td id="imageColumn2" width="450px" height="200px"><a href="https://www.netherthorpe.academy/" target="_blank"><img id="educationGridItem2" src="images/education/netherthorpe.png" width="300px" height="300px"></a></td>
-                        <!-- Right Column -->
-                        <td id="educationColText2" width="450px" height="200px">
-
+                    <div class="educationItem">
+                        <div class="educationImage">
+                            <a class="educationImageAnchor" href="https://www.netherthorpe.academy/" target="_blank">
+                                <img src="images/education/netherthorpe.png">
+                            </a>
+                        </div>
+                        <div class="educationText">
                             <h1>Netherthorpe School</h1>
-
                             <h2>Secondary School & Sixth Form</h2>
-
-                            <p id="educationRowText" width="450px" height="200px">
-                                <ul>
-                                    <li>4 A Levels</li>
-                                    <br>
-                                    <li>1 AS Level</li>
-                                    <br>
-                                    <li>8 GCSEs</li>
-                                </ul>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                            <ul>
+                                <li>4 A Levels</li>
+                                <li>1 AS Level</li>
+                                <li>8 GCSEs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="footerNav">
                     <div class="footerNav-container">
                         <a class="footerNav-home" href="/">Home</a>

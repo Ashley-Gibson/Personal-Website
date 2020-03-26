@@ -21,59 +21,165 @@
 }
 
 /* Third Layer */
-#thirdLayer{
-	width:100%;
-	height:100%;
-	position:absolute;
-	margin:auto;
-	padding:0 0 0 0;
+#thirdLayer {
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 0;
 }
 
-#thirdLayer h1{
-	color:grey;
-	margin:0;
+#thirdLayer h1 {
+	font-size: 26px;
+	color: grey;
+	margin: 0;
 }
 
-#thirdLayer h2{
-	color:#228B22;
-	margin:0;
+#thirdLayer h2 {
+	color: #228B22;
+	margin: 0;
 }
 
-#thirdLayerHeader{
-	position: absolute;
-	text-align:center;
-	color:black !important;
-	width:100%;
-	margin:0 0 0 0;
-	padding:30px 0 0 0;
+#thirdLayerHeader {
+	position: relative;
+	color: black !important;
+	font-size: 32px !important;
+	text-align: center;
+	width: 100%;
+	height: 10%;
+	margin: 0 0 0 0;
 }
-#imageColumn1{
-	position: absolute;
-	margin-left:20%;
-	margin-top:11%;
+
+#headerText {
+	width: 100%;
+	font-weight: bold;
+	position: relative;
+	margin: auto;
+	padding-top: 1.5%;
 }
-#imageColumn2{
-	position: absolute;
-	margin-left:20%;
-	margin-top:3%;
+
+.educationTable {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	margin: auto;
+	margin-top: 5%;
 }
-#educationColText1{
-	position: absolute;
-	margin-left:60%;
-	margin-top:10%;
+
+.educationItem {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align:middle;
 }
-#educationColText2{
-	position: absolute;
-	margin-left:60%;
-	margin-top:3%;
+
+.educationImage {
+	width: 60%;
+	height: 100%;
+	margin: auto;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	margin-left: 10%;
+	margin-right:0;
 }
-td
-{
-	margin-top:5%;
-	margin-left: 25%;
+
+ul {
+	line-height: 7px;
 }
-table{
-	position:absolute;
-	width:100%;
-	height:100%;
+
+li {
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.educationImageAnchor {
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.educationImage img {
+	width: 30%;
+	height: auto;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	margin: auto;	
+}
+
+.educationText {
+	text-align: left;
+	width: 30%;
+	height: 100%;
+	margin: auto;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+}
+
+/* Mobile - Portrait */
+@media screen and (max-width: 900px) and (orientation:portrait) {
+	#thirdLayerHeader {
+		margin: 40px 0 0 0 !important;
+	}
+
+	.educationTable {
+		margin-top: 0;
+		height:auto;
+	}
+
+	.educationItem {
+		position:relative;
+		flex-direction: column !important;
+		width: 90% !important;
+		height: auto !important;		
+	}
+
+	.educationImage {
+		padding-top: 5%;
+		position: relative !important;
+		width: 100% !important;
+		height: 40%;
+		margin: 0;
+		text-align: center;
+	}
+
+	.educationImage img {
+		width: 80% !important;
+		margin:auto;
+	}
+
+	.educationText {
+		padding-top: 5% !important;
+		text-align: center !important;
+		width: 100% !important;
+		height:50%;
+	}
+
+	ul {
+		padding: 0 !important;
+	}
+
+	li {
+		padding-top: 5%;
+		padding-left: 0 !important;
+		list-style: none !important;
+	}
 }
