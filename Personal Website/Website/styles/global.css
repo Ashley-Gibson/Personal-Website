@@ -10,7 +10,7 @@ body{
 }
 
 /* Show Cursor hand on Anchor element hover */
-a, a label{
+a, a label {
     cursor: pointer;
 }
 
