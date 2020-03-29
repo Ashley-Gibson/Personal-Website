@@ -13,8 +13,8 @@ $(window).on('load', hideLoader);
 
 function slideButtons()
 {
-    if ($('.creditsButton') !== null)
-        $('.creditsButton').addClass('creditsButton-open');
+    if ($('.creditsAnchor') !== null)
+        $('.creditsAnchor').addClass('creditsAnchor-open');
     if ($('.stableButton') !== null)
         $('.stableButton').addClass('stableButton-open');
     if ($('.dashboardButton') !== null)
