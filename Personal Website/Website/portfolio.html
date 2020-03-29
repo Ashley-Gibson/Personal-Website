@@ -97,7 +97,7 @@
             <div id="portfolioSelector">
                 <a id="completeSelectorButton" onclick="showCompletePortfolio()">Complete</a>
                 &nbsp;|&nbsp;
-                <a id="incompleteSelectorButton" onclick="showIncompletePortfolio()">Incomplete</a>
+                <a id="inProgressSelectorButton" onclick="showInProgressPortfolio()">In Progress</a>
                 &nbsp;|&nbsp;
                 <a id="gamesSelectorButton" onclick="showGamesPortfolio()">Games</a>
             </div>
@@ -121,9 +121,9 @@
                 </a>
             </div>
 
-            <!-- INCOMPLETE PROJECTS -->
+            <!-- IN PROGRESS PROJECTS -->
 
-            <div id="incompletePortfolio" style="display:none;">
+            <div id="inProgressPortfolio" style="display:none;">
                 <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Web-Quiz" target="_blank">
                     <p>Web Quiz - C# .NET</p>
                     <img id="portfolioImage" src="images/portfolio/webQuiz.png">
@@ -203,7 +203,7 @@
 	
 	function hideLoader() {
 		$('#loading').hide();
-        $('#incompletePortfolio').hide();
+        $('#inProgressPortfolio').hide();
         $('#gamesPortfolio').hide();
         $('#page').show();
     }
@@ -216,13 +216,13 @@
 	
 	/* Manage Portfolio Grid Show/Hide */
 
-	function showIncompletePortfolio()
+	function showInProgressPortfolio()
 	{
         $('#completePortfolio').css('display', 'none');
         $('#gamesPortfolio').css('display','none');
-		$('#incompletePortfolio').css('display','flex');
+		$('#inProgressPortfolio').css('display','flex');
 
-		$('#incompleteSelectorButton').css(
+		$('#inProgressSelectorButton').css(
 			{
 				"font-weight": "bold",
 				"text-decoration":"none"
@@ -240,7 +240,7 @@
 
 	function showCompletePortfolio()
 	{
-        $('#incompletePortfolio').css('display', 'none');
+        $('#inProgressPortfolio').css('display', 'none');
         $('#gamesPortfolio').css('display','none');
 		$('#completePortfolio').css('display','flex');
 
@@ -250,7 +250,7 @@
 				"text-decoration":"none"
 			}
 			);
-		$('#incompleteSelectorButton').css(
+		$('#inProgressSelectorButton').css(
 			{						
 				"font-weight": "normal",
             });
@@ -263,7 +263,7 @@
 
     function showGamesPortfolio()
     {
-		$('#incompletePortfolio').css('display','none');
+		$('#inProgressPortfolio').css('display','none');
         $('#completePortfolio').css('display', 'none');
         $('#gamesPortfolio').css('display','flex');
 
@@ -272,7 +272,7 @@
 				"font-weight": "normal",
             });
 
-		$('#incompleteSelectorButton').css(
+		$('#inProgressSelectorButton').css(
 		{						
 				"font-weight": "normal",
         });
