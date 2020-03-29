@@ -101,6 +101,11 @@ img#firstLayerPic
 	height: 40px;
 }
 
+.socialRow img:hover {
+	border-radius:20px;
+	background-color:white;
+}
+
 .socialRow img {
 	width: 40px;
 	height: 40px;
