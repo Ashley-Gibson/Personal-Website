@@ -52,148 +52,150 @@
         /**/</script>
 </head>
 
-    <body>
-		<!-- Loading Spinner -->
-		<div id="loading"></div>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading"></div>
 
-		<!-- Show/Hide Page -->
-        <div id="page" style="display:none;">
+    <!-- Show/Hide Page -->
+    <div id="page" style="display:none;">
 
-            <!-- Credits Button -->
-            <!--<a class="creditsAnchor" href="credits.html" target="_blank">
-            <div class="creditsButton">
-                <p class="creditsButton-text">Credits</p>
+        <!--CV Download Button -->
+        <div>
+            <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobileNav" style="display:none;">
+            <ul class="mobileNav-container">
+                <li><a class="mobileNav-home" href="/">Home</a></li>
+                <li><a class="mobileNav-portfolio" href="portfolio.html">Portfolio</a></li>
+                <li><a class="mobileNav-workExperience" href="experience.html">Experience</a></li>
+                <li><a class="mobileNav-education" href="education.html">Education</a></li>
+                <li><a class="mobileNav-photgraphy" href="photography.html">Photography</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Burger Menu Icon -->
+        <div class="mobileBurgerMenu">
+            <img src="images/navigation/burger.png" width="30" height="30" onclick="showMobileNav()" />
+        </div>
+
+        <!-- Mobile Close Menu Icon -->
+        <div class="close" onclick="hideMobileNav()"></div>
+
+        <!-- ***************************** Second Layer - Experience ***************************** -->
+
+        <div id="secondLayer">
+            <h1 id="secondLayerHeader">
+                Some of my projects...
+            </h1>
+            <h2>
+                Please visit my <a href="https://github.com/Ashley-Gibson" target="_blank">GitHub</a> or click the links below
+            </h2>
+
+            <!-- Work/University Projects -->
+            <div id="portfolioSelector">
+                <a id="completeSelectorButton" onclick="showCompletePortfolio()">Complete</a>
+                &nbsp;|&nbsp;
+                <a id="incompleteSelectorButton" onclick="showIncompletePortfolio()">Incomplete</a>
+                &nbsp;|&nbsp;
+                <a id="gamesSelectorButton" onclick="showGamesPortfolio()">Games</a>
             </div>
-            </a>-->
 
-            <!-- Dashboard Button -->
-            <!--<a class="dashboardAnchor" href="/dashboard">
-            <div class="dashboardButton">
-                <p class="dashboardButtonText">Dashboard</p>
-            </div>
-            </a>-->
+            <!-- COMPLETE PROJECTS -->
 
-            <!--CV Download Button -->
-            <div>
-                <a class="fixedCVButton" href="docs/CV.docx" target="_blank">Download my CV</a>
-            </div>
+            <div id="completePortfolio">
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Number-Manipulator" target="_blank">
+                    <p>Number Manipulator - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/numberManipulator.png">
+                </a>
 
-            <!-- Mobile Navigation -->
-            <div class="mobileNav" style="display:none;">
-                <ul class="mobileNav-container">
-                    <li><a class="mobileNav-home" href="/">Home</a></li>
-                    <li><a class="mobileNav-portfolio" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="mobileNav-workExperience" href="experience.html">Experience</a></li>
-                    <li><a class="mobileNav-education" href="education.html">Education</a></li>
-                    <li><a class="mobileNav-photgraphy" href="photography.html">Photography</a></li>
-                </ul>
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Abstract-Factory" target="_blank">
+                    <p>Abstract Factory - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/abstractFactory.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/SOLID" target="_blank">
+                    <p>SOLID Principles - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/solid.png">
+                </a>
             </div>
 
-            <!-- Mobile Burger Menu Icon -->
-            <div class="mobileBurgerMenu">
-                <img src="images/navigation/burger.png" width="30" height="30" onclick="showMobileNav()" />
+            <!-- INCOMPLETE PROJECTS -->
+
+            <div id="incompletePortfolio" style="display:none;">
+                <a id="portfolioItem" href="#">
+                    <p>Web Quiz - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/webQuiz.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Chain-Of-Responsibility" target="_blank">
+                    <p>Chain of Responsibility - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/chainOfResponsibility.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Path-Finder" target="_blank">
+                    <p>Path Finder - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/pathFinding.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Stable-Matching" target="_blank">
+                    <p>Stable Matching - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/stableMatching.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Searching-Algorithms" target="_blank">
+                    <p>Searching Algorithms - C# .NET</p>
+                    <img id="portfolioImage" src="images/portfolio/googleSearch.png">
+                </a>
+
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Stock-Market-Dashboard" target="_blank">
+                    <p>Stock Market Dashboard - JS Framework - SPA</p>
+                    <img id="portfolioImage" src="images/portfolio/stocks.png">
+                </a>
             </div>
 
-            <!-- Mobile Close Menu Icon -->
-            <div class="close" onclick="hideMobileNav()"></div>
+            <!-- GAMES PROJECTS -->
 
-            <!-- ***************************** Second Layer - Experience ***************************** -->
+            <div id="gamesPortfolio" style="display:none;">
+                <a id="portfolioItem" href="#">
+                    <p>Spot and the Zombies - C++</p>
+                    <img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png">
+                </a>
 
-            <div id="secondLayer">
-                <h1 id="secondLayerHeader">
-                    Some of my projects...
-                </h1>
-                <h2>
-                    Download my <a href="/docs/Portfolio.zip">Portfolio</a> or view my <a href="https://github.com/Ashley-Gibson" target="_blank">GitHub</a>
-                </h2>
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Tic-Tac-Toe" target="_blank">
+                    <p>Tic Tac Toe - C++</p>
+                    <img id="portfolioImage" src="images/portfolio/tictactoe.png">
+                </a>
 
-                <!-- Work/University Projects -->
-                <div id="portfolioSelector">
-                    <a id="educationSelectorButton" onclick="showEducationPortfolio()">Education</a>
-                    &nbsp;|&nbsp;
-                    <a title="Coming soon..." id="workSelectorButton" onclick="">Work</a>
-                </div>
+                <a id="portfolioItem" href="#">
+                    <p>Warriors Walk - C# Unity (Mobile Game with .apk)</p>
+                    <img id="portfolioImage" src="images/portfolio/warriorsWalk.png">
+                </a>
 
-                <div id="workPortfolio">
+                <a id="portfolioItem" href="#">
+                    <p>Jump! - C# Unity</p>
+                    <img id="portfolioImage" src="images/portfolio/jump.png">
+                </a>
 
-                    <div id="portfolioItem">
-                        <p>Number Manipulator - C#.NET</p>
-                        <img id="portfolioImage" src="images/portfolio/numberManipulator.png">
-                    </div>
+                <a id="portfolioItem" href="https://github.com/Ashley-Gibson/Shadows" target="_blank">
+                    <p>Shadows - C++ DirectX 11</p>
+                    <img id="portfolioImage" src="images/portfolio/shadows.png">
+                </a>
+            </div>
 
-                    <div id="portfolioItem">
-                        <p>Spot and the Zombies - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Tic Tac Toe - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/tictactoe.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Warriors Walk - C# (Mobile Game with .apk)</p>
-                        <img id="portfolioImage" src="images/portfolio/warriorsWalk.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Jump! - C#</p>
-                        <img id="portfolioImage" src="images/portfolio/jump.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Shadows - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/shadows.png">
-                    </div>
-
-                </div>
-
-                <div id="educationPortfolio">
-
-                    <div id="portfolioItem">
-                        <p>Number Manipulator - C#.NET</p>
-                        <img id="portfolioImage" src="images/portfolio/numberManipulator.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Spot and the Zombies - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/spotAndTheZombies.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Tic Tac Toe - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/tictactoe.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Warriors Walk - C# (Mobile Game with .apk)</p>
-                        <img id="portfolioImage" src="images/portfolio/warriorsWalk.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Jump! - C#</p>
-                        <img id="portfolioImage" src="images/portfolio/jump.png">
-                    </div>
-
-                    <div id="portfolioItem">
-                        <p>Shadows - C++</p>
-                        <img id="portfolioImage" src="images/portfolio/shadows.png">
-                    </div>
-
-                </div>
-
-                <div class="footerNav">
-                    <div class="footerNav-container">
-                        <a class="footerNav-home" href="/">Home</a>
-                        <a class="footerNav-portfolio" href="portfolio.html">Portfolio</a>
-                        <a class="footerNav-experience" href="experience.html">Experience</a>
-                        <a class="footerNav-education" href="education.html">Education</a>
-                        <a class="footerNav-photgraphy" href="photography.html">Photography</a>
-                    </div>
+            <div class="footerNav">
+                <div class="footerNav-container">
+                    <a class="footerNav-home" href="/">Home</a>
+                    <a class="footerNav-portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="footerNav-experience" href="experience.html">Experience</a>
+                    <a class="footerNav-education" href="education.html">Education</a>
+                    <a class="footerNav-photgraphy" href="photography.html">Photography</a>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
 
 <script type="text/javascript">	
@@ -201,7 +203,8 @@
 	
 	function hideLoader() {
 		$('#loading').hide();
-		$('#workPortfolio').hide();
+        $('#incompletePortfolio').hide();
+        $('#gamesPortfolio').hide();
         $('#page').show();
     }
 
@@ -213,38 +216,71 @@
 	
 	/* Manage Portfolio Grid Show/Hide */
 
-	function showWorkPortfolio()
+	function showIncompletePortfolio()
 	{
-		$('#educactionPortfolio').hide();
-		$('#workPortfolio').show();
+        $('#completePortfolio').css('display', 'none');
+        $('#gamesPortfolio').css('display','none');
+		$('#incompletePortfolio').css('display','flex');
 
-		$('#workSelectorButton').css(
+		$('#incompleteSelectorButton').css(
 			{
 				"font-weight": "bold",
 				"text-decoration":"none"
 			});
-		$('#educationSelectorButton').css(
+		$('#completeSelectorButton').css(
 			{			
 				"font-weight": "normal",
-				"text-decoration":"line-through"
-			});
+            });
+
+        $('#gamesSelectorButton').css(
+		{						
+				"font-weight": "normal",
+		});
 	}
 
-	function showEducationPortfolio()
+	function showCompletePortfolio()
 	{
-		$('#workPortfolio').hide();
-		$('#educactionPortfolio').show();
+        $('#incompletePortfolio').css('display', 'none');
+        $('#gamesPortfolio').css('display','none');
+		$('#completePortfolio').css('display','flex');
 
-		$('#educationSelectorButton').css(			
+		$('#completeSelectorButton').css(			
 			{
 				"font-weight": "bold",
 				"text-decoration":"none"
 			}
 			);
-		$('#workSelectorButton').css(
+		$('#incompleteSelectorButton').css(
 			{						
 				"font-weight": "normal",
-				"text-decoration":"line-through"
-			});
+            });
+
+        $('#gamesSelectorButton').css(
+		{						
+				"font-weight": "normal",
+		});
+    }
+
+    function showGamesPortfolio()
+    {
+		$('#incompletePortfolio').css('display','none');
+        $('#completePortfolio').css('display', 'none');
+        $('#gamesPortfolio').css('display','flex');
+
+		$('#completeSelectorButton').css(			
+		{
+				"font-weight": "normal",
+            });
+
+		$('#incompleteSelectorButton').css(
+		{						
+				"font-weight": "normal",
+        });
+
+        $('#gamesSelectorButton').css(
+		{						
+				"font-weight": "bold",
+				"text-decoration":"none"
+		});
 	}
 </script>
