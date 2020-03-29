@@ -81,9 +81,12 @@ img#firstLayerPic
 	color:white;
 }
 
+.line3 a{
+	font-weight:bold;
+}
+
 .line3:hover a {
 	color: #808080;
-	font-weight:bold;
 }
 
 .socialRow {
