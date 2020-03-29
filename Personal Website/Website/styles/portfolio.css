@@ -27,13 +27,16 @@
 	color:grey;
 }
 
-#workSelectorButton{
+#incompleteSelectorButton{
 	font-weight: normal;
-	text-decoration: line-through;
 }
 
-#educationSelectorButton{
+#completeSelectorButton{
 	font-weight: bold;
+}
+
+#gamesSelectorButton {
+	font-weight: normal;
 }
 
 /* Second Layer */
@@ -76,11 +79,25 @@
 	border:0;
 }
 
-#educationPortfolio {
-	display: flex !important;
+#completePortfolio {
+	display: flex;
 	margin: auto;
 	max-width:70%;
 	flex-wrap:wrap;
+}
+
+#incompletePortfolio{
+	display: none;
+	margin: auto;
+	max-width: 70%;
+	flex-wrap: wrap;
+}
+
+#gamesPortfolio {
+	display: none;
+	margin: auto;
+	max-width: 70%;
+	flex-wrap: wrap;
 }
 
 #portfolioItem {
@@ -89,16 +106,34 @@
 	margin-top:2%;
 }
 
-#workPortfolio{
-	display:none !important;
+#completePortfolio a {
+	text-decoration: none;
+}
+
+#incompletePortfolio a {
+	text-decoration: none !important;
+}
+
+#gamesPortfolio a {
+	text-decoration: none !important;
 }
 
 /* iPhone 6/7/8 - Portrait */
 @media screen and (max-width: 900px) and (orientation:portrait) {
 
-	#educationPortfolio {
+	#completePortfolio {
 		max-width: 90% !important;
 		margin-bottom:5%;
+	}
+
+	#incompletePortfolio {
+		max-width: 90% !important;
+		margin-bottom: 5%;
+	}
+
+	#gamesPortfolio {
+		max-width: 90% !important;
+		margin-bottom: 5%;
 	}
 
 	#portfolioItem{
