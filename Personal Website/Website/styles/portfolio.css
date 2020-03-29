@@ -27,7 +27,7 @@
 	color:grey;
 }
 
-#incompleteSelectorButton{
+#inProgressSelectorButton {
 	font-weight: normal;
 }
 
@@ -86,7 +86,7 @@
 	flex-wrap:wrap;
 }
 
-#incompletePortfolio{
+#inProgressPortfolio {
 	display: none;
 	margin: auto;
 	max-width: 70%;
@@ -110,7 +110,7 @@
 	text-decoration: none;
 }
 
-#incompletePortfolio a {
+#inProgressPortfolio a {
 	text-decoration: none !important;
 }
 
@@ -126,7 +126,7 @@
 		margin-bottom:5%;
 	}
 
-	#incompletePortfolio {
+	#inProgressPortfolio {
 		max-width: 90% !important;
 		margin-bottom: 5%;
 	}
