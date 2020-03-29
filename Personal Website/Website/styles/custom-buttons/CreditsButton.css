@@ -1,42 +1,44 @@
 ﻿.creditsAnchor {
     position: fixed;
-    top: -2.5%;
-    left: 95%;
-    width: 8% !important;
-    height: 8% !important;
+    top: 1%;
+    right:-100px;
+    width: 100px;
+    height:40px;
 }
 .creditsButton{ 
     position:relative;
-    width:100% !important;
-    height:100% !important;
+    display:flex;
+    width:100%;
+    height:100%;
     background-color: #00AFFF;
     z-index: 99999;
-    border-radius: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
     color: #E9E9E9;
+    margin:auto;
 }
 
-.creditsButton-open {
+.creditsAnchor-open {
     transition: 0.5s ease-in;
+    right:0;
 }
 
 .creditsButton:hover {
     background-color: #FF69B4;
     transition: 0.5s ease-in-out;
-    color:black !important;
+    color:black;
 }
 
 .creditsButton p {
     text-align: center;
-    padding: 27% 30% 0 0;
-    margin: 0;    
+    align-self:center;
+    margin: auto;    
     font-size: 16px;
     font-weight: bold;
 }
 
 @media screen and (max-width:968px) {
-    .creditsButton {
-        border-radius: 20px !important;
-    }
+
     .creditsAnchor {
         top: 70% !important;
         left: 50% !important;
@@ -46,7 +48,7 @@
         height:6% !important;
     }
 
-    .creditsButton p {
-        padding: 7% 1% 0 0 !important;
+    .creditsButton{
+        border-radius:20px;
     }
 }
