@@ -82,18 +82,25 @@
 	overflow: hidden;	
 }
 
-.imgHidden {	
-	display:none !important;
+.imgHidden {
+	display: none !important;
 }
 
-.imgFadeHide {
-	opacity: 0 !important;
+.imgShow {
+	display: block !important;
+}
+
+.imgFadeOut {
+	opacity: 0;
+}
+
+.imgFadeIn {
+	opacity: 0.7;
+
 }
 
 .imgContainer img {
-	opacity: 0.7;
-	display: block;
-	transition: all 0.5s linear;
+	transition: opacity 0.4s linear;
 }
 
 .imgContainer {
@@ -109,30 +116,25 @@
 	object-fit: cover;
 	overflow: hidden;
 	/* Blur images in and out */
-	opacity: .7;
 	-webkit-webkit-transition: opacity 0.7s ease;
 	-moz-webkit-transition: opacity 0.7s ease;
 	-ms-webkit-transition: opacity 0.7s ease;
 	-o-webkit-transition: opacity 0.7s ease;
-	transition: opacity 0.7s ease;
 	-webkit-filter: blur(0.4px);
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
-	transition: all 0.7s ease;
 	transform: scale(1.0);
 }
 
 .photographyTable img:hover {
-	opacity: 1;
+	opacity: 1 !important;
 	-webkit-webkit-transition: opacity 0.7s ease-out;
 	-moz-webkit-transition: opacity 0.7s ease-out;
 	-ms-webkit-transition: opacity 0.7s ease-out;
 	-o-webkit-transition: opacity 0.7s ease-out;
-	transition: opacity 0.7s ease-out;
 	-webkit-filter: blur(0.1px);
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
-	transition: all 0.7s ease-out;
 	transform: scale(1.1);
 }
 
