@@ -1,7 +1,0 @@
-
-Database Name: WebServiceData
-
-Host: 50.62.209.123:3306
-
-Database User: AGibson
-Password: *In KeePass*
