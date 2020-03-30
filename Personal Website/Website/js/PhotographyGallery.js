@@ -82,7 +82,7 @@ async function photographyTable_leftArrow() {
 
     for (var i = 0; i < imagesArray.length; i++)
     {
-        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {    
+        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {
             $($(imagesArray[i])[0]).addClass('imgFadeOut');
             $($(imagesArray[i])[0]).removeClass('imgFadeIn');
             image1 = true;

@@ -92,15 +92,16 @@
 
 .imgFadeOut {
 	opacity: 0;
+	transition: opacity 0.5s linear;
 }
 
 .imgFadeIn {
 	opacity: 0.7;
-
+	transition: opacity 0.5s linear;
 }
 
 .imgContainer img {
-	transition: opacity 0.4s linear;
+	transition: opacity 0.5s linear;
 }
 
 .imgContainer {
@@ -108,6 +109,7 @@
 	height: 33.33333%;
 	object-fit: cover;
 	overflow: hidden;
+	transition: opacity 0.5s linear;
 }
 
 .photographyTable img {
@@ -116,6 +118,7 @@
 	object-fit: cover;
 	overflow: hidden;
 	/* Blur images in and out */
+	opacity: .7;
 	-webkit-webkit-transition: opacity 0.7s ease;
 	-moz-webkit-transition: opacity 0.7s ease;
 	-ms-webkit-transition: opacity 0.7s ease;
@@ -123,6 +126,7 @@
 	-webkit-filter: blur(0.4px);
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
+	transition: all 0.7s linear;
 	transform: scale(1.0);
 }
 
