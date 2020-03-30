@@ -1,16 +1,4 @@
-﻿/* Page Load
-*  {
-*         Get array all images from "camera" folder
-*         Assign randomly to an image within ".photographyTable a"
-*         Render all images but set inactive ones as "display:none;"
-*  }
-*
-*  Define left and right arrow for setting active and inactive images (sets of 15)
-*  Create transition for left and right arrow to move between images
-*/
-
-
-$(document).ready(function ()
+﻿$(document).ready(function ()
 {
     var imageList = $('.photographyTable a').find("img");
 
@@ -84,20 +72,41 @@ function photographyTable_leftArrow() {
         imagesArray.push($(allImageContainers[i]).find('img'));
     }
 
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (!$($(imagesArray[i])[0]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[0]).addClass('imgHidden');
-            $($(imagesArray[i])[2]).removeClass('imgHidden');
+    for (var i = 0; i < imagesArray.length; i++)
+    {
+        if (!$($(imagesArray[i])[0]).hasClass('imgHidden')) {    
+            $($(imagesArray[i])[0]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[2]).removeClass('imgFadeHide');
         }
         else if (!$($(imagesArray[i])[1]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[1]).addClass('imgHidden');
-            $($(imagesArray[i])[0]).removeClass('imgHidden');
+            $($(imagesArray[i])[1]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[0]).removeClass('imgFadeHide');
         }
         else if (!$($(imagesArray[i])[2]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[2]).addClass('imgHidden');
-            $($(imagesArray[i])[1]).removeClass('imgHidden');
+            $($(imagesArray[i])[2]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[1]).removeClass('imgFadeHide');
         }
     }
+    
+    setTimeout(function () {
+        for (var i = 0; i < imagesArray.length; i++) {
+            if (!$($(imagesArray[i])[0]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[0]).addClass('imgHidden');      
+                $($(imagesArray[i])[2]).removeClass('imgHidden');
+            }
+            else if (!$($(imagesArray[i])[1]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[1]).addClass('imgHidden');
+                $($(imagesArray[i])[0]).removeClass('imgHidden');
+            }
+            else if (!$($(imagesArray[i])[2]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[2]).addClass('imgHidden');
+                $($(imagesArray[i])[1]).removeClass('imgHidden');
+            }
+        }
+    }, 520);
 }
 
 function photographyTable_rightArrow() {
@@ -110,16 +119,36 @@ function photographyTable_rightArrow() {
 
     for (var i = 0; i < imagesArray.length; i++) {
         if (!$($(imagesArray[i])[0]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[0]).addClass('imgHidden');
-            $($(imagesArray[i])[1]).removeClass('imgHidden');
+            $($(imagesArray[i])[0]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[1]).removeClass('imgFadeHide');
         }
         else if (!$($(imagesArray[i])[1]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[1]).addClass('imgHidden');
-            $($(imagesArray[i])[2]).removeClass('imgHidden');
+            $($(imagesArray[i])[1]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[2]).removeClass('imgFadeHide');
         }
         else if (!$($(imagesArray[i])[2]).hasClass('imgHidden')) {
-            $($(imagesArray[i])[2]).addClass('imgHidden');
-            $($(imagesArray[i])[0]).removeClass('imgHidden');
+            $($(imagesArray[i])[2]).addClass('imgFadeHide');
+
+            $($(imagesArray[i])[0]).removeClass('imgFadeHide');
         }
     }
+
+    setTimeout(function () {
+        for (var i = 0; i < imagesArray.length; i++) {
+            if (!$($(imagesArray[i])[0]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[0]).addClass('imgHidden');
+                $($(imagesArray[i])[1]).removeClass('imgHidden');
+            }
+            else if (!$($(imagesArray[i])[1]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[1]).addClass('imgHidden');
+                $($(imagesArray[i])[2]).removeClass('imgHidden');
+            }
+            else if (!$($(imagesArray[i])[2]).hasClass('imgHidden')) {
+                $($(imagesArray[i])[2]).addClass('imgHidden');
+                $($(imagesArray[i])[0]).removeClass('imgHidden');
+            }
+        }
+    }, 520);
 }
