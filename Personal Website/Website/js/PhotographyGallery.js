@@ -82,7 +82,7 @@ async function photographyTable_leftArrow() {
 
     for (var i = 0; i < imagesArray.length; i++)
     {
-        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {
+        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {    
             $($(imagesArray[i])[0]).addClass('imgFadeOut');
             $($(imagesArray[i])[0]).removeClass('imgFadeIn');
             image1 = true;
@@ -213,18 +213,14 @@ async function photographyTable_rightArrow() {
         if (image1) {
             $($(imagesArray[i])[1]).addClass('imgShow');
             $($(imagesArray[i])[1]).removeClass('imgHidden');
-            image1 = true;
         }
         else if (image1) {
             $($(imagesArray[i])[2]).addClass('imgShow');
             $($(imagesArray[i])[2]).removeClass('imgHidden');
-            image2 = true;
         }
         else if (image3) {
             $($(imagesArray[i])[0]).addClass('imgShow');
             $($(imagesArray[i])[0]).removeClass('imgHidden');
-            image3 = true;
-
         }
     }
 }
