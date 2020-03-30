@@ -4,8 +4,6 @@ function hideLoader()
     $('#loading').hide();
     $('#workPortfolio').hide();
     $('#page').show();
-
-    initNavBar();
 }
 
 // Hide loading spinner
