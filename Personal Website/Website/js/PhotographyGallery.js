@@ -79,7 +79,7 @@ async function photographyTable_leftArrow() {
     $('.photographyTable a').addClass("imgFadeOut");
 
     // Sleep
-    await sleep(520);
+    await sleep(800);
        
     // Swap Images
     for (var i = 0; i < 15; i++) {
@@ -112,7 +112,7 @@ async function photographyTable_rightArrow() {
     $('.photographyTable a').addClass("imgFadeOut");
 
     // Sleep
-    await sleep(520);
+    await sleep(800);
 
     // Swap Images
     for (var i = 0; i < 15; i++) {
