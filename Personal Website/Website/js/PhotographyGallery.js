@@ -94,6 +94,9 @@ async function photographyTable_leftArrow() {
         }
     }    
 
+    // Sleep
+    await sleep(200);
+
     if (photoSet === 0)
         photoSet = 2;
     else if (photoSet === 1)
@@ -126,6 +129,9 @@ async function photographyTable_rightArrow() {
             $(imageList[i]).attr('src', allImages[randomNumbers[i]]);
         }
     }
+
+    // Sleep
+    await sleep(200);
 
     if (photoSet === 0)
         photoSet = 1;
