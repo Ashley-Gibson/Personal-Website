@@ -8,9 +8,8 @@ var imageList;
 
 var photoSet = 0;
 
-$(document).ready(function ()
-{
-    imageList = $('.photographyTable a').find("img"); 
+$(document).ready(function () {
+    imageList = $('.photographyTable a').find("img");
     allImages[0] = "images/camera/lightCinema.png";
     allImages[1] = "images/camera/owenBuilding.png";
     allImages[2] = "images/camera/crookedSpire.png";
@@ -60,13 +59,13 @@ $(document).ready(function ()
     while (randomNumbers.length < totalImageCount) {
         var randomInt = (Math.floor(Math.random() * totalImageCount) + 1) - 1;
         if (randomNumbers.indexOf(randomInt) === -1) {
-            randomNumbers.push(randomInt);                           
+            randomNumbers.push(randomInt);
         }
     }
 
     for (var i = 0; i < 15; i++) {
         imageList[i].src = allImages[randomNumbers[i]];
-    } 
+    }
 });
 
 function sleep(ms) {
@@ -75,12 +74,12 @@ function sleep(ms) {
 
 async function photographyTable_leftArrow() {
     // Fade Out
-    $('.photographyTable a').removeClass("imgFadeIn");    
+    $('.photographyTable a').removeClass("imgFadeIn");
     $('.photographyTable a').addClass("imgFadeOut");
 
     // Sleep
     await sleep(800);
-       
+
     // Swap Images
     for (var i = 0; i < 15; i++) {
         if (photoSet === 0) {
@@ -92,7 +91,10 @@ async function photographyTable_leftArrow() {
         else {
             $(imageList[i]).attr('src', allImages[randomNumbers[i + 15]]);
         }
-    }    
+    }
+
+    // Sleep
+    await sleep(200);
 
     if (photoSet === 0)
         photoSet = 2;
@@ -126,6 +128,9 @@ async function photographyTable_rightArrow() {
             $(imageList[i]).attr('src', allImages[randomNumbers[i]]);
         }
     }
+
+    // Sleep
+    await sleep(200);
 
     if (photoSet === 0)
         photoSet = 1;
