@@ -35,13 +35,6 @@
 	text-align: center;
 }
 
-.photographyTable {
-	padding-top: 1%;
-	width:80%;
-	height:80%;
-	margin:auto;
-}
-
 .leftArrow {
 	cursor:pointer;
 	display: block;
@@ -72,14 +65,25 @@
 	-webkit-transform: rotate(-45deg);
 }
 
-.photographyTable a {
-	position:relative;
+.photographyTable {
 	display:flex;
+	flex-direction:row;
+	padding-top: 1%;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+}
+
+.photographyTable a {
+	position: relative;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;	
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity 0.5s linear;
 }
 
 .imgHidden {
@@ -87,7 +91,7 @@
 }
 
 .imgShow {
-	display: block !important;
+	display: flex !important;
 }
 
 .imgFadeOut {
@@ -96,10 +100,7 @@
 }
 
 .imgFadeIn {
-	transition: opacity 0.5s linear;
-}
-
-.imgContainer img {
+	opacity: 1 !important;
 	transition: opacity 0.5s linear;
 }
 
@@ -108,7 +109,6 @@
 	height: 33.33333%;
 	object-fit: cover;
 	overflow: hidden;
-	transition: opacity 0.5s linear;
 }
 
 .photographyTable img {
