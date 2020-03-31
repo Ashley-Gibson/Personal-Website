@@ -1,9 +1,16 @@
-﻿$(document).ready(function ()
-{
-    var imageList = $('.photographyTable a').find("img");
+﻿var randomNumbers = [];
+var totalImageCount = 45;
 
-    // Refactor 'allImages' to get all images in the camera directory
-    var allImages = new Array();
+// Refactor 'allImages' to get all images in the camera directory
+var allImages = new Array();
+
+var imageList;
+
+var photoSet = 0;
+
+$(document).ready(function ()
+{
+    imageList = $('.photographyTable a').find("img"); 
     allImages[0] = "images/camera/lightCinema.png";
     allImages[1] = "images/camera/owenBuilding.png";
     allImages[2] = "images/camera/crookedSpire.png";
@@ -49,9 +56,7 @@
     allImages[42] = "images/camera/sheffieldChineseSideStreet.png";
     allImages[43] = "images/camera/fairviewLakeRidge.png";
     allImages[44] = "images/camera/sunriseRidgeHike.png";
-    
-    var randomNumbers = [];
-    var totalImageCount = 45;
+
     while (randomNumbers.length < totalImageCount) {
         var randomInt = (Math.floor(Math.random() * totalImageCount) + 1) - 1;
         if (randomNumbers.indexOf(randomInt) === -1) {
@@ -59,8 +64,8 @@
         }
     }
 
-    for (var i = 0; i < totalImageCount; i++) {
-        imageList[i].src = allImages[randomNumbers[i]]; 
+    for (var i = 0; i < 15; i++) {
+        imageList[i].src = allImages[randomNumbers[i]];
     } 
 });
 
@@ -69,158 +74,67 @@ function sleep(ms) {
 }
 
 async function photographyTable_leftArrow() {
-    var allImageContainers = $('.photographyTable a').find('.imgContainer');
-    var imagesArray = new Array();
+    // Fade Out
+    $('.photographyTable a').removeClass("imgFadeIn");    
+    $('.photographyTable a').addClass("imgFadeOut");
 
-    for (var i = 0; i < allImageContainers.length; i++) {
-        imagesArray.push($(allImageContainers[i]).find('img'));
-    }
+    // Sleep
+    await sleep(520);
+       
+    // Swap Images
+    for (var i = 0; i < 15; i++) {
+        if (photoSet === 0) {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]);
+        }
+        else if (photoSet === 1) {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i]]);
+        }
+        else {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i + 15]]);
+        }
+    }    
 
-    var image1 = false;
-    var image2 = false;
-    var image3 = false;
+    if (photoSet === 0)
+        photoSet = 2;
+    else if (photoSet === 1)
+        photoSet = 0;
+    else
+        photoSet = 1;
 
-    for (var i = 0; i < imagesArray.length; i++)
-    {
-        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {    
-            $($(imagesArray[i])[0]).addClass('imgFadeOut');
-            $($(imagesArray[i])[0]).removeClass('imgFadeIn');
-            image1 = true;
-        }
-        else if ($($(imagesArray[i])[1]).hasClass('imgShow')) {
-            $($(imagesArray[i])[1]).addClass('imgFadeOut');
-            $($(imagesArray[i])[1]).removeClass('imgFadeIn');
-            image2 = true;
-        }
-        else if ($($(imagesArray[i])[2]).hasClass('imgShow')) {
-            $($(imagesArray[i])[2]).addClass('imgFadeOut');
-            $($(imagesArray[i])[2]).removeClass('imgFadeIn');
-            image3 = true;
-        }
-    }
-
-    await sleep(500);
-    
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[0]).addClass('imgHidden');     
-            $($(imagesArray[i])[0]).removeClass('imgShow'); 
-        }
-        else if (image2) {
-            $($(imagesArray[i])[1]).addClass('imgHidden');
-            $($(imagesArray[i])[1]).removeClass('imgShow'); 
-        }
-        else if (image3) {
-            $($(imagesArray[i])[2]).addClass('imgHidden');
-            $($(imagesArray[i])[2]).removeClass('imgShow'); 
-        }
-    }
-
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[2]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[2]).addClass('imgFadeIn');
-        }
-        else if (image2) {
-            $($(imagesArray[i])[0]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[0]).addClass('imgFadeIn');
-        }
-        else if (image3) {
-            $($(imagesArray[i])[1]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[1]).addClass('imgFadeIn');
-        }
-    }
-
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[2]).addClass('imgShow');
-            $($(imagesArray[i])[2]).removeClass('imgHidden');
-        }
-        else if (image2) {
-            $($(imagesArray[i])[0]).addClass('imgShow');
-            $($(imagesArray[i])[0]).removeClass('imgHidden');
-        }
-        else if (image3) {
-            $($(imagesArray[i])[1]).addClass('imgShow');
-            $($(imagesArray[i])[1]).removeClass('imgHidden');
-        }
-    }
+    // Fade In
+    $('.photographyTable a').removeClass("imgFadeOut");
+    $('.photographyTable a').addClass("imgFadeIn");
 }
 
 async function photographyTable_rightArrow() {
-    var allImageContainers = $('.photographyTable a').find('.imgContainer');
-    var imagesArray = new Array();
+    // Fade Out
+    $('.photographyTable a').removeClass("imgFadeIn");
+    $('.photographyTable a').addClass("imgFadeOut");
 
-    for (var i = 0; i < allImageContainers.length; i++) {
-        imagesArray.push($(allImageContainers[i]).find('img'));
-    }
+    // Sleep
+    await sleep(520);
 
-    var image1 = false;
-    var image2 = false;
-    var image3 = false;
-
-    for (var i = 0; i < imagesArray.length; i++) {
-        if ($($(imagesArray[i])[0]).hasClass('imgShow')) {
-            $($(imagesArray[i])[0]).addClass('imgFadeOut');
-            $($(imagesArray[i])[0]).removeClass('imgFadeIn');
-            image1 = true;
+    // Swap Images
+    for (var i = 0; i < 15; i++) {
+        if (photoSet === 0) {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i + 15]]);
         }
-        else if ($($(imagesArray[i])[1]).hasClass('imgShow')) {
-            $($(imagesArray[i])[1]).addClass('imgFadeOut');
-            $($(imagesArray[i])[1]).removeClass('imgFadeIn');
-            image2 = true;
+        else if (photoSet === 1) {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]);
         }
-        else if ($($(imagesArray[i])[2]).hasClass('imgShow')) {
-            $($(imagesArray[i])[2]).addClass('imgFadeOut');
-            $($(imagesArray[i])[2]).removeClass('imgFadeIn');
-            image3 = true;
+        else {
+            $(imageList[i]).attr('src', allImages[randomNumbers[i]]);
         }
     }
 
-    await sleep(500);
+    if (photoSet === 0)
+        photoSet = 1;
+    else if (photoSet === 1)
+        photoSet = 2;
+    else
+        photoSet = 0;
 
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[0]).addClass('imgHidden');
-            $($(imagesArray[i])[0]).removeClass('imgShow');
-        }
-        else if (image2) {
-            $($(imagesArray[i])[1]).addClass('imgHidden');
-            $($(imagesArray[i])[1]).removeClass('imgShow');
-        }
-        else if (image3) {
-            $($(imagesArray[i])[2]).addClass('imgHidden');
-            $($(imagesArray[i])[2]).removeClass('imgShow');
-        }
-    }
-
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[1]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[1]).addClass('imgFadeIn');
-        }
-        else if (image2) {
-            $($(imagesArray[i])[2]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[2]).addClass('imgFadeIn');
-        }
-        else if (image3) {
-            $($(imagesArray[i])[0]).removeClass('imgFadeOut');
-            $($(imagesArray[i])[0]).addClass('imgFadeIn');
-        }
-    }
-
-    for (var i = 0; i < imagesArray.length; i++) {
-        if (image1) {
-            $($(imagesArray[i])[1]).addClass('imgShow');
-            $($(imagesArray[i])[1]).removeClass('imgHidden');
-        }
-        else if (image2) {
-            $($(imagesArray[i])[2]).addClass('imgShow');
-            $($(imagesArray[i])[2]).removeClass('imgHidden');
-        }
-        else if (image3) {
-            $($(imagesArray[i])[0]).addClass('imgShow');
-            $($(imagesArray[i])[0]).removeClass('imgHidden');
-        }
-    }
+    // Fade In
+    $('.photographyTable a').removeClass("imgFadeOut");
+    $('.photographyTable a').addClass("imgFadeIn");
 }
