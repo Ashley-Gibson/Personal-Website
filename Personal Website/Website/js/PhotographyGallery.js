@@ -177,7 +177,7 @@ async function photographyTable_rightArrow() {
         }
     }
 
-    await sleep(520);
+    await sleep(500);
 
     for (var i = 0; i < imagesArray.length; i++) {
         if (image1) {
@@ -214,7 +214,7 @@ async function photographyTable_rightArrow() {
             $($(imagesArray[i])[1]).addClass('imgShow');
             $($(imagesArray[i])[1]).removeClass('imgHidden');
         }
-        else if (image1) {
+        else if (image2) {
             $($(imagesArray[i])[2]).addClass('imgShow');
             $($(imagesArray[i])[2]).removeClass('imgHidden');
         }
