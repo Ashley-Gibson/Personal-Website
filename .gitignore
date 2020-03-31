@@ -4433,3 +4433,4 @@ Dashboard/bin/Release/
 Dashboard/.config/dotnet-tools.json
 Personal Website/Bin/roslyn/
 .vs/
+Personal Website/node_modules/

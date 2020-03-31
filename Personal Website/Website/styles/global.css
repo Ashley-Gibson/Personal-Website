@@ -25,6 +25,7 @@ a, a label {
     cursor: pointer;
 }
 
+
 /* Non-Mobile */
 @media screen and (min-width:481px)
 {

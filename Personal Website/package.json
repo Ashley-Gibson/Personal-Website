@@ -1,0 +1,24 @@
+{
+  "name": "personal-website",
+  "version": "2.7.0",
+  "description": "Personal Website Packages",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashley-Gibson/Personal-Website.git"
+  },
+  "author": "Ashley Gibson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashley-Gibson/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/Ashley-Gibson/Personal-Website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1"
+  }
+}
