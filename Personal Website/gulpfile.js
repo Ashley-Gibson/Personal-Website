@@ -3,6 +3,7 @@
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 
 gulp.task('minify-css', () => {
     return gulp.src('./Website/styles/*.css')
@@ -11,8 +12,8 @@ gulp.task('minify-css', () => {
         .pipe(gulp.dest('./Website/styles'));
 });
 
-/*gulp.task('styles', function () {
+gulp.task('styles', function () {
     gulp.watch('./Website/styles/*.css', function (evt) {
         gulp.task('minify-css');
     });
-});*/
+});
