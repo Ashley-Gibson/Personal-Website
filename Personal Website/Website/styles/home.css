@@ -115,7 +115,7 @@ img#firstLayerPic
 }
 
 
-.CVContainer {
+.homeCVContainer {
 	padding: 20px 0 !important;
 	width: 180px;
 	height: auto;
@@ -123,7 +123,8 @@ img#firstLayerPic
 	margin:auto;
 }
 
-.fixedCVButton {
+.homeCVButton {
+	position:relative;
 	background-color: #4eb5f1;
 	display: block;
 	padding: 0.3em 1.2em;

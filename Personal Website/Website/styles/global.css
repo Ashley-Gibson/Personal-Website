@@ -29,6 +29,17 @@ a, a label {
 /* Non-Mobile */
 @media screen and (min-width:481px)
 {
+    .CVContainer {
+        padding: 20px 0 !important;
+        width: 180px;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        position: fixed;
+        position: fixed;
+        top: 95%;
+        left: 50%;
+    }
     .fixedCVButton {
         background-color: #4eb5f1;
         display: flex;
@@ -47,9 +58,7 @@ a, a label {
         text-align: center;
         transition: all 0.2s;
         z-index: 5;
-        position: fixed;
-        top: 95%;
-        left:50%;
+
         width: 180px;
     }
 
