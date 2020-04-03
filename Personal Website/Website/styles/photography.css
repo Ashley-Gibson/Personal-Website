@@ -121,15 +121,29 @@
 @media screen and (max-height: 900px) and (orientation:portrait) {
 	.photographyTable{
 		margin-top:5%;
-		width:90%;
+	}
+
+	.imgContainer {
+		padding-bottom:5%;
+		width: 100%;
+		height: 50%;
+		object-fit:cover;
 	}
 
 	.photographyTable img {
-		width: 50%;
-		height: auto;
+		width: 100%;
+		height: 100%;
 	}
 
-	.photographyTable img:nth-child(15){
-		display:none;
+	.leftArrow {
+		left: 3%;
+		width: 20px;
+		height: 20px;
+	}
+
+	.rightArrow {
+		right: 4%;
+		width: 20px;
+		height: 20px;
 	}
 }
