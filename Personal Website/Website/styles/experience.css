@@ -24,30 +24,9 @@
 	height:100%;
 	padding:0 0 0 0;
 }
-#secondLayer h1{
-	font-size:26px;
-	color:grey;
-	margin:0;
-}
 #secondLayer h2{
 	color:#228B22;
 	margin:0;
-}
-#secondLayerHeader{
-	position: relative;
-	color:black !important;
-	font-size:32px !important;
-	text-align:center;
-	width:100%;
-	height:10%;
-	margin:0 0 0 0;
-}
-#headerText{
-	width:100%;
-	font-weight:bold;
-	position:relative;
-	margin:auto;
-	padding-top:1.5%;
 }
 ul{
 	line-height: 7px;
@@ -92,6 +71,11 @@ li{
 	text-align:left;
 	width: 30%;
 	height:100%;
+}
+
+.experienceText h1, .experienceText h2 {
+	text-align: center;
+	color: grey;
 }
 
 /* Mobile - Portrait */

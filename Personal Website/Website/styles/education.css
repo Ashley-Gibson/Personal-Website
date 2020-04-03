@@ -38,24 +38,6 @@
 	margin: 0;
 }
 
-#thirdLayerHeader {
-	position: relative;
-	color: black !important;
-	font-size: 32px !important;
-	text-align: center;
-	width: 100%;
-	height: 10%;
-	margin: 0 0 0 0;
-}
-
-#headerText {
-	width: 100%;
-	font-weight: bold;
-	position: relative;
-	margin: auto;
-	padding-top: 1.5%;
-}
-
 .educationTable {
 	position: relative;
 	display: flex;
@@ -132,6 +114,10 @@ li {
 	align-items: center;
 	align-content: center;
 	vertical-align: middle;
+}
+
+.educationText h1, .educationText h2 {
+	text-align: center;
 }
 
 /* Mobile - Portrait */
