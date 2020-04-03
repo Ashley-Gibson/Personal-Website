@@ -122,55 +122,58 @@ img#firstLayerPic
 	justify-content: center;
 }
 
-/* iPhone 6/7/8 - Portrait */
-@media screen and (max-width: 900px) and (orientation:portrait)
-{
-    body {
-        background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
-        background-size:cover;
-        font-size: 0.8em;
-    }
-
-	.objectContainer {
-		display:flex;
-		flex-direction:column;
-		width: 300px;
-		height: 220px;
-		overflow: hidden;
-		position: absolute !important;
-		left:50% !important;
-		top:50% !important;
-		margin-left:-150px;
-		margin-top:-110px;
-		justify-content: center;
-		align-items: center;
-		align-self:center;
-		text-align:center;
-		align-content:center;
-	}
-
-	.line1{
-		font-size: 20px;
-	}
-
-	.line2{
-		font-size: 30px;
-	}
-
-	.line3{
-		font-size:18px;
-		padding:10px 0;
-	}
-
-	.line3 a{
-		font-weight:bold;
-	}
-
-	.socialRow {
-		padding: 10px 0;
-	}
-
-	.CVContainer {
-		padding: 10px 0 !important;
-	}
+.homeCVButton:hover {
+	background-color: #4095c6;
 }
+
+	/* iPhone 6/7/8 - Portrait */
+	@media screen and (max-width: 900px) and (orientation:portrait) {
+		body {
+			background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
+			background-size: cover;
+			font-size: 0.8em;
+		}
+
+		.objectContainer {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+			height: 220px;
+			overflow: hidden;
+			position: absolute !important;
+			left: 50% !important;
+			top: 50% !important;
+			margin-left: -150px;
+			margin-top: -110px;
+			justify-content: center;
+			align-items: center;
+			align-self: center;
+			text-align: center;
+			align-content: center;
+		}
+
+		.line1 {
+			font-size: 20px;
+		}
+
+		.line2 {
+			font-size: 30px;
+		}
+
+		.line3 {
+			font-size: 18px;
+			padding: 10px 0;
+		}
+
+			.line3 a {
+				font-weight: bold;
+			}
+
+		.socialRow {
+			padding: 10px 0;
+		}
+
+		.CVContainer {
+			padding: 10px 0 !important;
+		}
+	}
