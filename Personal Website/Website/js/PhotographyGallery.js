@@ -96,6 +96,9 @@ async function photographyTable_leftArrow() {
     // Sleep
     await sleep(200);
 
+    // Sleep
+    await sleep(200);
+
     if (photoSet === 0)
         photoSet = 2;
     else if (photoSet === 1)
