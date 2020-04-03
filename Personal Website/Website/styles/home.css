@@ -128,7 +128,7 @@ img#firstLayerPic
 
 	/* iPhone 6/7/8 - Portrait */
 	@media screen and (max-width: 900px) and (orientation:portrait) {
-		body {
+		.homeBody {
 			background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
 			background-size: cover;
 			font-size: 0.8em;
@@ -138,7 +138,7 @@ img#firstLayerPic
 			display: flex;
 			flex-direction: column;
 			width: 300px;
-			height: 220px;
+			height: 250px;
 			overflow: hidden;
 			position: absolute !important;
 			left: 50% !important;
@@ -170,10 +170,10 @@ img#firstLayerPic
 			}
 
 		.socialRow {
-			padding: 10px 0;
+			padding: 0;
 		}
 
-		.CVContainer {
+		.homeCVContainer {
 			padding: 10px 0 !important;
 		}
 	}

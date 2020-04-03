@@ -1,3 +1,7 @@
+.portfolioBody {
+	background-image: none !important;
+}
+
 /* Portfolio Grid */
 #portfolioSelector{
 	text-align:center;
@@ -120,6 +124,11 @@
 	}
 
 	.portfolioBody #layerHeader {
-		padding: 40px 0 0 0;
+		text-align:center;
+	}
+
+	.portfolioBody #mainLayer h2 {
+		text-align: center;
+		margin-top: 1em;
 	}
 }

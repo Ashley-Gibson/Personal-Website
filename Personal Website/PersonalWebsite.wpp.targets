@@ -2,8 +2,11 @@
 <Project ToolsVersion="4.0"
          xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ExcludeFromPackageFolders Include="App_Data;Bin;node_modules;">
+    <ExcludeFromPackageFolders Include="App_Data;Bin;node_modules;Website\styles;">
       <FromTarget>PersonalWebsite.wpp.targets</FromTarget>
     </ExcludeFromPackageFolders>
+    <ExcludeFromPackageFiles Include="gulpfile.js;package-lock.json;package.json;packages.config;PersonalWebsite.wpp.targets;Web.config;website.publishproj;">
+      <FromTarget>PersonalWebsite.wpp.targets</FromTarget>
+    </ExcludeFromPackageFiles>
   </ItemGroup>
 </Project>

@@ -1,4 +1,7 @@
-/* Third Layer */
+.educationBody {
+	background-image: none !important;
+}
+
 .educationBody #mainLayer {
 	width: 100%;
 	height: 100%;
@@ -101,9 +104,6 @@ li {
 
 /* Mobile - Portrait */
 @media screen and (max-width: 900px) and (orientation:portrait) {
-	.educationBody #layerHeader {
-		margin: 40px 0 0 0 !important;
-	}
 
 	.educationTable {
 		margin-top: 0;

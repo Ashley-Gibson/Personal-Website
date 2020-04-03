@@ -1,4 +1,7 @@
-/* Fourth Layer */
+.photographyBody {
+	background-image: none !important;
+}
+
 .educationBody #mainLayer {
 	width: 100%;
 	position: relative;
