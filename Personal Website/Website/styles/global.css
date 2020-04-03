@@ -107,7 +107,7 @@ a, a label {
         margin: 0 !important;
         position: relative;
         color: black !important;
-        font-size: 32px !important;
+        font-size: 26px !important;
         text-align: center;
         width: 100%;
     }
@@ -133,7 +133,8 @@ a, a label {
             z-index: 5;
             position: fixed;
             width: 50%;
-            left: 28%;
+            left: 50%;
+            margin-left:-25%;
             top: 85%;
         }
 
