@@ -10,38 +10,39 @@
 }
 
 @media only screen and (max-width:768px) {
-        /* Hide Desktop Nav */
-        .homeNav, .footerNav {
-            display: none !important;
-        }
+    /* Hide Desktop Nav */
+    .homeNav, .footerNav {
+        display: none !important;
+    }
 
-        .mobileNav {
-            position:fixed !important;
-            display: inline-block;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(128, 128, 128);
-            display: table;
-            z-index: 100;
-        }
+    .mobileNav {
+        position: fixed !important;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(128, 128, 128);
+        display: table;
+        z-index: 100;
+    }
 
         .mobileNav a {
             color: white;
             text-decoration: none;
         }
 
-        .mobileNav-container {
-            margin: auto;
-            display: table-cell;
-            vertical-align: middle;
-            align-items: center;
-            justify-content: center;
-            width: 25%;
-            padding: 0;
-        }
+    .mobileNav-container {
+        margin: auto;
+        display: table-cell;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        padding: 0;
+    }
 
         .mobileNav-container ul {
+            list-style-type: none;
         }
 
         .mobileNav-container li {
