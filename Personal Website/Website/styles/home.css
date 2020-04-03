@@ -1,40 +1,14 @@
-/* General */
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 100%;
-    color: #000000;
-    background-image: url('../images/backgrounds/meLake.jpg');
-    background-position:center;
-    background-repeat:no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Loading Spinner */
-#loading {
-    background: url('data:image/gif;base64,R0lGODlhLQAtAPMPANTU1O3t7fJoRfv7++9OJdvb2+Lf3/SBZPixn/7v6/m+r/b29ubm5u0wAM3Nzf///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAALQAtAAAE//DJSesIBjg3WxMHklRkaUpBsa2c5L0fcs5VoLFrB7+ETJsDFY6l270Eox8lMBwWjS+fktnEPaEehVJiqBJd2NdhOul6ARNCuDFGnZiG8tAQGFQSioOx/egGSgsrcVwrDHYzCXoefGYOCyRCG4N9AI9bBgSMLAU1c1s0jSt/Ezc4k58VoStoKFWsqBWlOKOROJawFIFNnANVDLglDFUXw8AkvU0YTafGcnOyos0kVDjQK4fSE8heLK/ZpE3f4uPk5RVN3uLWXuXb1cnk1N2qkuT0DnTF3+4sdb7iwprYqcUCmzF+Kzg9kNct2zoHox6sY4brnjeG+MTRiyih1qQMBltpDADwcRMJXRkJbTAkMmDKPituLXmpiiTHCcpMybm5xJkrcF4m8Sxxz4oEbvW2YAx3FCnET0uNPnA6dMYCglK5FZCJykaVCa6qdsUKFkcBscAuZNhQ1mbIGREAACH5BAUKAA8ALBgAAAAVABUAAARg0Lliwng46y37DFuIeR4AihlJFheqqmf4wuLsGShgOzimhIOAQdV7HBoI1IDRKR4bjQTqsQA4oVDBdPPEIreYrpcAfhC83t/WgMZqwWLvotyGJuH1Q1lRf28TdQ1lZnURACH5BAUKAA8ALCIABwALAB8AAARe8EkZppXG1fuyc8PlfYU1fhqGroAErGu1wGj5MPQXPnna5QZKzjboTV40jnLJ5BAa0GhDkpBKJQorVCA5aBuHR/WLeHi/Cca3wX1+FeYvYXKWlulS7qWeUHrvSnAWEQAh+QQFCgAPACwYABgAFQAVAAAEZ/DJSSdwOLvK39BaVwUgVoiUUToGKn1r4D7M6gzuYp/uFc+qEmAmCWpkHQPhMDE6eJXEoUFlFjO4SUIxpXqtDxVSQvCav5Ox5MxugCtttqITNyNE9YYggYoT7i5sAnNEVAIHCHxEEhEAIfkEBQoADwAsBwAiAB8ACwAABFrwSXmImTjPBa6mTXh82cA4qJcdYdscSlIGBmo7KujuxATcQNyEtStOgsGLosg8IoGBB4K5cz5RUUlCQA1ZkYWBBkGgfm+ALEnBrUqCBTVpkkAc2s6CISD+RAAAIfkEBQoADwAsAAAYABUAFQAABF+wydnIuzhjSpP+j8BJCqgdY3OYGZI2Hvsk7yqHr3Err3UTKZvMxRHeRBOhAbBg0SRKh5TBckWlWENg8CldDNgwFmACi8+gwHltUq/DrEHhLb0FAO/bJWCG6y8DfHMOEQAh+QQFCgAPACwAAAcACwAfAAAEYPBJqaaVqJ0rU/vbJXyglZGlRKDkprAk8YxwY3j1dsLSkUs0VuVRayQkNRlnyWxeHNCoAzCRSgeSghUakBi2DoMkAHZgB2VGtrx4kMHUBwAsdm/r6yhegobuJ2R/Fl0WEQAh+QQFCgAPACwAAAAAFQAVAAAEYvDJSWtCR7RWu1TaJnoUQogoRyZhOnqI63qKPHuHjVbBlOsESsBh8LkOigRl4GgWJb/GgVRoOn2EZ2dovZIogK5VS+KKHYCvpHp2LNTMNkP9MIvpD0ObTG336G0OA3htaXgRADs=');
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 999999;
-}
-
-/* First Layer */
-a{
-	color:white;
-	text-decoration-line: none;
-}
-ul{
-	list-style-type: none;
-}
-p{
-	text-align: center;
+.homeBody {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+	color: #000000;
+	background-image: url('../images/backgrounds/meLake.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 img#firstLayerPic
@@ -43,16 +17,22 @@ img#firstLayerPic
 	min-width:100%;
 	height:100%;
 }
-.objectContainer{
-	position:fixed;
-	left:15%;
-	top:30%;
-	width:500px;
-	height:320px;
-	overflow:hidden;
+.objectContainer {
+	position: fixed;
+	left: 15%;
+	top: 30%;
+	width: 500px;
+	height: 320px;
+	overflow: hidden;
 	border: 1px solid rgba(0, 0, 0, 0);
-	border-radius:5%;
+	border-radius: 5%;
 	background-color: rgba(146, 145, 145, 0.4);
+	text-align: center;
+}
+
+.objectContainer a {
+	color: white;
+	text-decoration-line: none;
 }
 
 .line1 {
@@ -115,7 +95,7 @@ img#firstLayerPic
 }
 
 
-.CVContainer {
+.homeCVContainer {
 	padding: 20px 0 !important;
 	width: 180px;
 	height: auto;
@@ -123,7 +103,8 @@ img#firstLayerPic
 	margin:auto;
 }
 
-.fixedCVButton {
+.homeCVButton {
+	position:relative;
 	background-color: #4eb5f1;
 	display: block;
 	padding: 0.3em 1.2em;
@@ -141,55 +122,58 @@ img#firstLayerPic
 	justify-content: center;
 }
 
-/* iPhone 6/7/8 - Portrait */
-@media screen and (max-width: 900px) and (orientation:portrait)
-{
-    body {
-        background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
-        background-size:cover;
-        font-size: 0.8em;
-    }
-
-	.objectContainer {
-		display:flex;
-		flex-direction:column;
-		width: 300px;
-		height: 220px;
-		overflow: hidden;
-		position: absolute !important;
-		left:50% !important;
-		top:50% !important;
-		margin-left:-150px;
-		margin-top:-110px;
-		justify-content: center;
-		align-items: center;
-		align-self:center;
-		text-align:center;
-		align-content:center;
-	}
-
-	.line1{
-		font-size: 20px;
-	}
-
-	.line2{
-		font-size: 30px;
-	}
-
-	.line3{
-		font-size:18px;
-		padding:10px 0;
-	}
-
-	.line3 a{
-		font-weight:bold;
-	}
-
-	.socialRow {
-		padding: 10px 0;
-	}
-
-	.CVContainer {
-		padding: 10px 0 !important;
-	}
+.homeCVButton:hover {
+	background-color: #4095c6;
 }
+
+	/* iPhone 6/7/8 - Portrait */
+	@media screen and (max-width: 900px) and (orientation:portrait) {
+		.homeBody {
+			background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
+			background-size: cover;
+			font-size: 0.8em;
+		}
+
+		.objectContainer {
+			display: flex;
+			flex-direction: column;
+			width: 300px;
+			height: 250px;
+			overflow: hidden;
+			position: absolute !important;
+			left: 50% !important;
+			top: 50% !important;
+			margin-left: -150px;
+			margin-top: -110px;
+			justify-content: center;
+			align-items: center;
+			align-self: center;
+			text-align: center;
+			align-content: center;
+		}
+
+		.line1 {
+			font-size: 20px;
+		}
+
+		.line2 {
+			font-size: 30px;
+		}
+
+		.line3 {
+			font-size: 18px;
+			padding: 10px 0;
+		}
+
+			.line3 a {
+				font-weight: bold;
+			}
+
+		.socialRow {
+			padding: 0;
+		}
+
+		.homeCVContainer {
+			padding: 10px 0 !important;
+		}
+	}
