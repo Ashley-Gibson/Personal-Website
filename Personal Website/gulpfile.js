@@ -1,19 +1,18 @@
-﻿//https://gulpjs.com/docs/en/getting-started/working-with-files
+﻿const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css');
+const concat = require('gulp-concat');
 
-let gulp = require('gulp');
-let cleanCSS = require('gulp-clean-css');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-
-gulp.task('minify-css', () => {
-    return gulp.src('./Website/styles/*.css')
+function minifyCSS() {
+    return gulp.src('Website/styles/*.css')
         .pipe(cleanCSS())
         .pipe(concat('site.min.css'))
-        .pipe(gulp.dest('./Website/styles'));
+        .pipe(gulp.dest('Website/minified'));
+}
+
+gulp.task('minify-css', minifyCSS);
+
+gulp.task('watch', () => {
+    gulp.watch('Website/styles/*.css', minifyCSS);
 });
 
-gulp.task('styles', function () {
-    gulp.watch('./Website/styles/*.css', function (evt) {
-        gulp.task('minify-css');
-    });
-});
+gulp.task('default', gulp.series('minify-css', 'watch'));
