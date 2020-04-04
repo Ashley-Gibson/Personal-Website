@@ -33,7 +33,7 @@ function minifyJS() {
 gulp.task('minify-js', minifyJS);
 
 gulp.task('watch', () => {
-    gulp.watch('Website/styles/**/*.css', minifyCSS);
+    gulp.watch('Website/styles/**/*.scss', minifyCSS);
     gulp.watch('Website/js/**/*.js', minifyJS);
 });
 

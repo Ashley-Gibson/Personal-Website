@@ -11,12 +11,6 @@
 	height: 100%;
 }
 
-img#firstLayerPic
-{
-	object-fit:cover;
-	min-width:100%;
-	height:100%;
-}
 .objectContainer {
 	position: fixed;
 	left: 15%;
@@ -28,152 +22,151 @@ img#firstLayerPic
 	border-radius: 5%;
 	background-color: rgba(146, 145, 145, 0.4);
 	text-align: center;
+
+	&-line1 {
+		text-align: center;
+		margin: auto;
+		font-size: 30px;
+		font-style: italic;
+		color: white;
+		position: relative;
+		padding: 0 0 0 0;
+	}
+
+	&-line2 {
+		text-align: center;
+		margin: auto;
+		font-size: 60px;
+		color: white;
+		position: relative;
+		padding: 0 0 0 0;
+	}
+
+	&-line3 {
+		position: relative;
+		text-align: center;
+		font-size: 25px;
+		color: white;
+
+		&:hover a {
+			color: #808080;
+		}
+
+		a {
+			font-weight: bold;
+		}
+	}
+
+	a {
+		color: white;
+		text-decoration-line: none;
+	}
+
+	&-socialRow {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		justify-content: center;
+		margin: auto;
+		text-decoration: none;
+		padding: 20px 0;
+
+		a {
+			width: 40px;
+			height: 40px;
+		}
+
+		img {
+			width: 40px;
+			height: 40px;
+
+			:hover {
+				border-radius: 20px;
+				background-color: white;
+			}
+		}
+	}
 }
 
-.objectContainer a {
-	color: white;
-	text-decoration-line: none;
-}
-
-.line1 {
-	text-align: center;
-	margin: auto;
-	font-size: 30px;
-	font-style: italic;
-	color: white;
-	position: relative;
-	padding: 0 0 0 0;
-}
-
-.line2 {
-	text-align: center;
-	margin: auto;
-	font-size: 60px;
-	color: white;
-	position: relative;
-	padding: 0 0 0 0;
-}
-
-.line3 {
-	position: relative;
-	text-align: center;
-	font-size: 25px;
-	color:white;
-}
-
-.line3 a{
-	font-weight:bold;
-}
-
-.line3:hover a {
-	color: #808080;
-}
-
-.socialRow {
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	justify-content:center;
-	margin: auto;
-	text-decoration: none;
-	padding:20px 0;
-}
-
-.socialRow a {
-	width: 40px;
-	height: 40px;
-}
-
-.socialRow img:hover {
-	border-radius:20px;
-	background-color:white;
-}
-
-.socialRow img {
-	width: 40px;
-	height: 40px;
-}
-
-
-.homeCVContainer {
+.homeCV {
 	padding: 20px 0 !important;
 	width: 180px;
 	height: auto;
-	text-align:center;
-	margin:auto;
+	text-align: center;
+	margin: auto;
+
+	&-button {
+		position: relative;
+		background-color: #4eb5f1;
+		display: block;
+		padding: 0.3em 1.2em;
+		margin: 0 0.1em 0.1em 0;
+		border: 0.16em solid rgba(255,255,255,0);
+		border-radius: 2em;
+		box-sizing: border-box;
+		text-decoration: none;
+		font-family: 'Quicksand',sans-serif;
+		font-weight: 300;
+		color: #FFFFFF;
+		text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+		transition: all 0.2s;
+		z-index: 5;
+		justify-content: center;
+	}
+
+	:hover {
+		background-color: #4095c6;
+	}
 }
 
-.homeCVButton {
-	position:relative;
-	background-color: #4eb5f1;
-	display: block;
-	padding: 0.3em 1.2em;
-	margin: 0 0.1em 0.1em 0;
-	border: 0.16em solid rgba(255,255,255,0);
-	border-radius: 2em;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-family: 'Quicksand',sans-serif;
-	font-weight: 300;
-	color: #FFFFFF;
-	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-	transition: all 0.2s;
-	z-index: 5;
-	justify-content: center;
-}
+/* Mobile - Portrait */
+@media screen and (max-width: 500px) and (orientation:portrait) {
+	.homeBody {
+		background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
+		background-size: cover;
+		font-size: 0.8em;
+	}
 
-.homeCVButton:hover {
-	background-color: #4095c6;
-}
+	.objectContainer {
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		height: 250px;
+		overflow: hidden;
+		position: absolute !important;
+		left: 50% !important;
+		top: 50% !important;
+		margin-left: -150px;
+		margin-top: -110px;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		text-align: center;
+		align-content: center;
 
-	/* iPhone 6/7/8 - Portrait */
-	@media screen and (max-width: 900px) and (orientation:portrait) {
-		.homeBody {
-			background-image: url('../images/backgrounds/meLakeMobile.jpg') !important;
-			background-size: cover;
-			font-size: 0.8em;
-		}
-
-		.objectContainer {
-			display: flex;
-			flex-direction: column;
-			width: 300px;
-			height: 250px;
-			overflow: hidden;
-			position: absolute !important;
-			left: 50% !important;
-			top: 50% !important;
-			margin-left: -150px;
-			margin-top: -110px;
-			justify-content: center;
-			align-items: center;
-			align-self: center;
-			text-align: center;
-			align-content: center;
-		}
-
-		.line1 {
+		&-line1 {
 			font-size: 20px;
 		}
 
-		.line2 {
+		&-line2 {
 			font-size: 30px;
 		}
 
-		.line3 {
+		&-line3 {
 			font-size: 18px;
 			padding: 10px 0;
-		}
 
-			.line3 a {
+			a {
 				font-weight: bold;
 			}
+		}
 
-		.socialRow {
+		&-socialRow {
 			padding: 0;
 		}
-
-		.homeCVContainer {
-			padding: 10px 0 !important;
-		}
 	}
+
+	.homeCV {
+		padding: 10px 0 !important;
+	}
+}

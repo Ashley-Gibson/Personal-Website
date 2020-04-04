@@ -2,133 +2,133 @@
 	background-image: none !important;
 }
 
-/* Portfolio Grid */
-#portfolioSelector{
-	text-align:center;
+.portfolioSelector {
+	text-align: center;
 	font-size: 25px;
-	color:grey;
+	color: grey;
+
+	&-inProgressButton {
+		font-weight: normal;
+	}
+
+	&-completeButton {
+		font-weight: bold;
+	}
+
+	&-gamesButton {
+		font-weight: normal;
+	}
 }
 
-#inProgressSelectorButton {
-	font-weight: normal;
+.portfolioBody {
+	.mainLayer {
+		&-header{
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			position: absolute;
+			margin: auto;
+			padding: 0 0 0 0;
+		}
+		h2 {
+			color: #228B22;
+			text-align: center;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
 }
 
-#completeSelectorButton{
-	font-weight: bold;
-}
-
-#gamesSelectorButton {
-	font-weight: normal;
-}
-
-/* Second Layer */
-.portfolioBody #mainLayer {
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	position: absolute;
+.completePortfolio-item, inProgressPortfolio-item, gamesPortfolio-item {
+	flex-direction: row;
 	margin: auto;
-	padding: 0 0 0 0;
+	margin-top: 2%;
+
+	p {
+		width: 100%;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&-image {
+		width: 370px;
+		height: 250px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
 }
 
-.portfolioBody #mainLayer h2 {
-	color: #228B22;
-	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-#portfolioItem p{
-	width:100%;
-	height:50px;
-	margin:0;
-	padding:0;
-	border:0;
-	font-weight:bold;
-	text-align: center;
-}
-#portfolioImage{
-	width:370px;
-	height:250px;
-	margin:0;
-	padding:0;
-	border:0;
-}
-
-#completePortfolio {
+.completePortfolio {
 	display: flex;
 	margin: auto;
 	max-width:70%;
 	flex-wrap:wrap;
 }
 
-#inProgressPortfolio {
+.inProgressPortfolio {
 	display: none;
 	margin: auto;
 	max-width: 70%;
 	flex-wrap: wrap;
 }
 
-#gamesPortfolio {
+.gamesPortfolio {
 	display: none;
 	margin: auto;
 	max-width: 70%;
 	flex-wrap: wrap;
 }
 
-#portfolioItem {
-	flex-direction: row;
-	margin:auto;
-	margin-top:2%;
+.completePortfolio, .inProgressPortfolio, .gamesPortfolio {
+	a {
+		text-decoration: none;
+	}
 }
 
-#completePortfolio a {
-	text-decoration: none;
-}
+/* Mobile - Portrait */
+@media screen and (max-width: 500px) and (orientation:portrait) {
 
-#inProgressPortfolio a {
-	text-decoration: none !important;
-}
-
-#gamesPortfolio a {
-	text-decoration: none !important;
-}
-
-/* iPhone 6/7/8 - Portrait */
-@media screen and (max-width: 900px) and (orientation:portrait) {
-
-	#completePortfolio {
+	.completePortfolio {
 		max-width: 90% !important;
 		margin-bottom:5%;
 	}
 
-	#inProgressPortfolio {
+	.inProgressPortfolio {
 		max-width: 90% !important;
 		margin-bottom: 5%;
 	}
 
-	#gamesPortfolio {
+	.gamesPortfolio {
 		max-width: 90% !important;
 		margin-bottom: 5%;
 	}
 
-	#portfolioItem{
-		width:100%;
-		height:40%;
-		margin-top:8%;
-	}
-
-	#portfolioImage {
+	.completePortfolio-item, inProgressPortfolio-item, gamesPortfolio-item {
 		width: 100%;
-		height: 250px;
+		height: 40%;
+		margin-top: 8%;
+
+		&-image {
+			width: 100%;
+			height: 250px;
+		}
 	}
 
-	.portfolioBody #layerHeader {
-		text-align:center;
-	}
+	.portfolioBody {
+		.mainLayer {
+			&-header {
+				text-align: center;
+			}
 
-	.portfolioBody #mainLayer h2 {
-		text-align: center;
-		margin-top: 1em;
+			h2 {
+				text-align: center;
+				margin-top: 1em;
+			}
+		}
 	}
 }

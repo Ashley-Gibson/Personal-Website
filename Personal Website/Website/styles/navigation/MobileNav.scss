@@ -1,15 +1,14 @@
-﻿@media only screen and (min-width:769px) {
-    .mobileNav {
-        display: none !important;
-    }
-
-    /* Burger Menu Icon */
-    .mobileBurgerMenu {
-        display: none !important;
-    }
+﻿.mobileNav {
+    display: none !important;
 }
 
-@media only screen and (max-width:768px) {
+/* Burger Menu Icon */
+.mobileBurgerMenu {
+    display: none !important;
+}
+
+/* Mobile - Portrait */
+@media screen and (max-width: 500px) and (orientation:portrait) {
     /* Hide Desktop Nav */
     .homeNav, .footerNav {
         display: none !important;
@@ -24,75 +23,75 @@
         background-color: rgb(128, 128, 128);
         display: table;
         z-index: 100;
-    }
 
-        .mobileNav a {
+        a {
             color: white;
             text-decoration: none;
         }
 
-    .mobileNav-container {
-        margin: auto;
-        display: table-cell;
-        vertical-align: middle;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        padding: 0;
+        &-container {
+            margin: auto;
+            display: table-cell;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            padding: 0;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    font-size: 32px;
+                    display: block;
+                    text-align: center;
+                    line-height: 2em;
+
+                    :active {
+                        color: blue;
+                    }
+                }
+            }
+        }
     }
 
-        .mobileNav-container ul {
-            list-style-type: none;
-        }
+    /* Burger Menu Icon */
+    .mobileBurgerMenu {
+        display: block !important;
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 10px;
+        z-index: 98;
 
-        .mobileNav-container li {
-            font-size: 32px;
-            display: block;
-            text-align: center;
-            line-height: 2em;
-        }
-
-        .mobileNav-container li:active {
-            color: blue;
-        }
-
-        /* Burger Menu Icon */
-        .mobileBurgerMenu {
-            display: block !important;
-            position: fixed;
-            margin-left: 10px;
-            margin-top: 10px;
-            z-index: 98;
-        }
-
-        .mobileBurgerMenu:hover {
+        :hover {
             opacity: 0.5;
         }
+    }
 
-        /* Close Icon */
-        .close {
-            display: none;
-            position: fixed;
-            right: 10%;
-            top: 2%;
-            opacity: 1.0;
-            z-index: 101;
+    /* Close Icon */
+    .close {
+        display: none;
+        position: fixed;
+        right: 10%;
+        top: 2%;
+        opacity: 1.0;
+        z-index: 101;
+
+        :before, :after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background-color: white;
         }
 
-            .close:before, .close:after {
-                position: absolute;
-                left: 15px;
-                content: ' ';
-                height: 33px;
-                width: 2px;
-                background-color: white;
-            }
+        :before {
+            transform: rotate(45deg);
+        }
 
-            .close:before {
-                transform: rotate(45deg);
-            }
-
-            .close:after {
-                transform: rotate(-45deg);
-            }
+        :after {
+            transform: rotate(-45deg);
+        }
     }
+}
