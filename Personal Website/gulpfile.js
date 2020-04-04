@@ -10,7 +10,7 @@ const CLIENT_BABEL_OPTS = {
 };
 
 // Minify all CSS in styles folder
-function minifyCSS() {
+function minifySCSS() {
     return gulp.src('Website/styles/**/*.scss')
         .pipe(sass())
         .pipe(cleanCSS())
@@ -18,7 +18,7 @@ function minifyCSS() {
         .pipe(gulp.dest('Website/minified'));
 }
 
-gulp.task('minify-scss', minifyCSS);
+gulp.task('minify-scss', minifySCSS);
 
 // Minify all js in js folder
 function minifyJS() {
@@ -33,7 +33,7 @@ function minifyJS() {
 gulp.task('minify-js', minifyJS);
 
 gulp.task('watch', () => {
-    gulp.watch('Website/styles/**/*.scss', minifyCSS);
+    gulp.watch('Website/styles/**/*.scss', minifySCSS);
     gulp.watch('Website/js/**/*.js', minifyJS);
 });
 

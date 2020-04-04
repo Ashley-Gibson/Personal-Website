@@ -43,20 +43,22 @@ a, a label {
 
 /* Non-Mobile */
 @media screen and (min-width: 501px) {
-    .layerHeader {
-        position: relative;
-        color: black !important;
-        font-size: 32px !important;
-        text-align: center;
-        width: 100%;
-        margin: 20px 0 0 0;
-    }
+    .mainLayer {
+        &-header {
+            position: relative;
+            color: black !important;
+            font-size: 32px !important;
+            text-align: center;
+            width: 100%;
+            margin: 20px 0 0 0;
 
-    .headerText {
-        width: 100%;
-        font-weight: bold;
-        position: relative;
-        margin: auto;
+            &-text {
+                width: 100%;
+                font-weight: bold;
+                position: relative;
+                margin: auto;
+            }
+        }
     }
 
     .globalCV {
@@ -91,7 +93,7 @@ a, a label {
             z-index: 99999;
             width: 180px;
 
-            :hover {
+            &:hover {
                 background-color: #4095c6;
             }
         }
@@ -100,23 +102,25 @@ a, a label {
 
 /* Mobile - Portrait */
 @media screen and (max-width: 500px) and (orientation:portrait) {
-    .layerHeader {
-        padding: 30px 0 0 0 !important;
-        font-weight: bold;
-        margin: 0 !important;
-        position: relative;
-        color: black !important;
-        font-size: 26px !important;
-        text-align: center;
-        width: 100%;
-    }
+    .mainLayer {
+        &-header {
+            padding: 30px 0 0 0 !important;
+            font-weight: bold;
+            margin: 0 !important;
+            position: relative;
+            color: black !important;
+            font-size: 26px !important;
+            text-align: center;
+            width: 100%;
 
-    .headerText {
-        padding: 5% 0;
+            &-text {
+                padding: 5% 0;
+            }
+        }
     }
 
     .globalCV {
-        &-button{
+        &-button {
             background-color: #4eb5f1;
             display: block;
             padding: 0.3em 1.2em;
@@ -136,10 +140,6 @@ a, a label {
             left: 50%;
             margin-left: -25%;
             top: 85%;
-        }
-
-        :hover {
-            background-color: #4095c6;
         }
     }
 }

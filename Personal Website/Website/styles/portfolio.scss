@@ -1,124 +1,148 @@
 .portfolioBody {
 	background-image: none !important;
-}
 
-.portfolioSelector {
-	text-align: center;
-	font-size: 25px;
-	color: grey;
-
-	&-inProgressButton {
-		font-weight: normal;
-	}
-
-	&-completeButton {
-		font-weight: bold;
-	}
-
-	&-gamesButton {
-		font-weight: normal;
-	}
-}
-
-.portfolioBody {
 	.mainLayer {
-		&-header{
-			width: 100%;
-			max-width: 100%;
-			height: 100%;
-			position: absolute;
-			margin: auto;
-			padding: 0 0 0 0;
-		}
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		position: absolute;
+		margin: auto;
+		padding: 0 0 0 0;
+
 		h2 {
 			color: #228B22;
 			text-align: center;
 			margin-bottom: 20px;
 			margin-top: 20px;
 		}
-	}
-}
 
-.completePortfolio-item, inProgressPortfolio-item, gamesPortfolio-item {
-	flex-direction: row;
-	margin: auto;
-	margin-top: 2%;
+		.portfolioSelector {
+			text-align: center;
+			font-size: 25px;
+			color: grey;
 
-	p {
-		width: 100%;
-		height: 50px;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-weight: bold;
-		text-align: center;
-	}
+			&-inProgressButton {
+				font-weight: normal;
+			}
 
-	&-image {
-		width: 370px;
-		height: 250px;
-		margin: 0;
-		padding: 0;
-		border: 0;
-	}
-}
+			&-completeButton {
+				font-weight: bold;
+			}
 
-.completePortfolio {
-	display: flex;
-	margin: auto;
-	max-width:70%;
-	flex-wrap:wrap;
-}
+			&-gamesButton {
+				font-weight: normal;
+			}
+		}
 
-.inProgressPortfolio {
-	display: none;
-	margin: auto;
-	max-width: 70%;
-	flex-wrap: wrap;
-}
+		.completePortfolio {
+			display: flex;
+			margin: auto;
+			max-width: 70%;
+			flex-wrap: wrap;
 
-.gamesPortfolio {
-	display: none;
-	margin: auto;
-	max-width: 70%;
-	flex-wrap: wrap;
-}
+			a {
+				text-decoration: none;
+			}
 
-.completePortfolio, .inProgressPortfolio, .gamesPortfolio {
-	a {
-		text-decoration: none;
+			&-item {
+				flex-direction: row;
+				margin: auto;
+				margin-top: 2%;
+
+				p {
+					width: 100%;
+					height: 50px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+					font-weight: bold;
+					text-align: center;
+				}
+
+				&-image {
+					width: 370px;
+					height: 250px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+			}
+		}
+
+		.inProgressPortfolio {
+			display: none;
+			margin: auto;
+			max-width: 70%;
+			flex-wrap: wrap;
+
+			a {
+				text-decoration: none;
+			}
+
+			&-item {
+				flex-direction: row;
+				margin: auto;
+				margin-top: 2%;
+
+				p {
+					width: 100%;
+					height: 50px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+					font-weight: bold;
+					text-align: center;
+				}
+
+				&-image {
+					width: 370px;
+					height: 250px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+			}
+		}
+
+		.gamesPortfolio {
+			display: none;
+			margin: auto;
+			max-width: 70%;
+			flex-wrap: wrap;
+
+			a {
+				text-decoration: none;
+			}
+
+			&-item {
+				flex-direction: row;
+				margin: auto;
+				margin-top: 2%;
+
+				p {
+					width: 100%;
+					height: 50px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+					font-weight: bold;
+					text-align: center;
+				}
+
+				&-image {
+					width: 370px;
+					height: 250px;
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+			}
+		}
 	}
 }
 
 /* Mobile - Portrait */
 @media screen and (max-width: 500px) and (orientation:portrait) {
-
-	.completePortfolio {
-		max-width: 90% !important;
-		margin-bottom:5%;
-	}
-
-	.inProgressPortfolio {
-		max-width: 90% !important;
-		margin-bottom: 5%;
-	}
-
-	.gamesPortfolio {
-		max-width: 90% !important;
-		margin-bottom: 5%;
-	}
-
-	.completePortfolio-item, inProgressPortfolio-item, gamesPortfolio-item {
-		width: 100%;
-		height: 40%;
-		margin-top: 8%;
-
-		&-image {
-			width: 100%;
-			height: 250px;
-		}
-	}
-
 	.portfolioBody {
 		.mainLayer {
 			&-header {
@@ -128,6 +152,54 @@
 			h2 {
 				text-align: center;
 				margin-top: 1em;
+			}
+
+			.completePortfolio {
+				max-width: 90% !important;
+				margin-bottom: 5%;
+
+				&-item {
+					width: 100%;
+					height: 40%;
+					margin-top: 8%;
+
+					&-image {
+						width: 100%;
+						height: 250px;
+					}
+				}
+			}
+
+			.inProgressPortfolio {
+				max-width: 90% !important;
+				margin-bottom: 5%;
+
+				&-item {
+					width: 100%;
+					height: 40%;
+					margin-top: 8%;
+
+					&-image {
+						width: 100%;
+						height: 250px;
+					}
+				}
+			}
+
+			.gamesPortfolio {
+				max-width: 90% !important;
+				margin-bottom: 5%;
+
+				&-item {
+					width: 100%;
+					height: 40%;
+					margin-top: 8%;
+
+					&-image {
+						width: 100%;
+						height: 250px;
+					}
+				}
 			}
 		}
 	}

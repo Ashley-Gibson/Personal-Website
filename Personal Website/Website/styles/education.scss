@@ -104,45 +104,49 @@
 
 /* Mobile - Portrait */
 @media screen and (max-width: 500px) and (orientation:portrait) {
+	.educationBody {
+		.mainLayer {
 
-	.educationTable {
-		margin-top: 0;
-		height: auto;
+			.educationTable {
+				margin-top: 0;
+				height: auto;
 
-		&-item {
-			position: relative;
-			flex-direction: column !important;
-			width: 90% !important;
-			height: auto !important;
+				&-item {
+					position: relative;
+					flex-direction: column !important;
+					width: 90% !important;
+					height: auto !important;
 
-			&-image {
-				padding-top: 5%;
-				position: relative !important;
-				width: 100% !important;
-				height: 40%;
-				margin: 0;
-				text-align: center;
+					&-image {
+						padding-top: 5%;
+						position: relative !important;
+						width: 100% !important;
+						height: 40%;
+						margin: 0;
+						text-align: center;
 
-				img {
-					width: 80% !important;
-					margin: auto;
-				}
-			}
+						img {
+							width: 80% !important;
+							margin: auto;
+						}
+					}
 
-			&-text {
-				padding-top: 5% !important;
-				text-align: center !important;
-				width: 100% !important;
-				height: 50%;
+					&-text {
+						padding-top: 5% !important;
+						text-align: center !important;
+						width: 100% !important;
+						height: 50%;
 
-				ul {
-					padding: 0 !important;
-				}
+						ul {
+							padding: 0 !important;
+						}
 
-				li {
-					padding-top: 5%;
-					padding-left: 0 !important;
-					list-style: none !important;
+						li {
+							padding-top: 5%;
+							padding-left: 0 !important;
+							list-style: none !important;
+						}
+					}
 				}
 			}
 		}

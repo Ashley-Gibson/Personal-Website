@@ -25,19 +25,19 @@
             font-weight: bold;
             text-decoration: none;
 
-            :hover {
+            &:hover {
                 color: #4eb5f1;
             }
 
-            :nth-child(1) {
+            &:nth-child(1) {
                 margin: 0;
             }
 
-            :nth-child(2n+2) {
+            &:nth-child(2n+2) {
                 margin: 0 3% 0 3%;
             }
 
-            :nth-child(5) {
+            &:nth-child(5) {
                 margin: 0;
             }
         }
