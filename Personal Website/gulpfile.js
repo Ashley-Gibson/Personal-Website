@@ -3,20 +3,22 @@ const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
 const BABEL_POLYFILL = './node_modules/babel-polyfill/browser.js';
 const CLIENT_BABEL_OPTS = {
     presets: ["@babel/env"]
 };
 
 // Minify all CSS in styles folder
-function minifyCSS() {
-    return gulp.src('Website/styles/**/*.css')
+function minifySCSS() {
+    return gulp.src('Website/styles/**/*.scss')
+        .pipe(sass())
         .pipe(cleanCSS())
         .pipe(concat('site.min.css'))
         .pipe(gulp.dest('Website/minified'));
 }
 
-gulp.task('minify-css', minifyCSS);
+gulp.task('minify-scss', minifySCSS);
 
 // Minify all js in js folder
 function minifyJS() {
@@ -31,8 +33,8 @@ function minifyJS() {
 gulp.task('minify-js', minifyJS);
 
 gulp.task('watch', () => {
-    gulp.watch('Website/styles/**/*.css', minifyCSS);
+    gulp.watch('Website/styles/**/*.scss', minifySCSS);
     gulp.watch('Website/js/**/*.js', minifyJS);
 });
 
-gulp.task('default', gulp.series('minify-css', 'minify-js', 'watch'));
+gulp.task('default', gulp.series('minify-scss', 'minify-js', 'watch'));
