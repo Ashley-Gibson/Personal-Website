@@ -118,28 +118,28 @@ async function photographyTable_leftArrow() {
         // Swap Images
         for (var i = 0; i < 2; i++) {
             switch (photoSet) {
-                case 0:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 42]]);  break;            
-                case 1:     $(imageList[i]).attr('src', allImages[randomNumbers[i]]);       break;
-                case 2:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 2]]);   break;
-                case 3:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 4]]);   break;
-                case 4:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 6]]);   break;
-                case 5:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 8]]);   break;
-                case 6:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 10]]);  break;
-                case 7:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 12]]);  break;
-                case 8:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 14]]);  break;
-                case 9:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 16]]);  break;
-                case 10:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 18]]);  break;
-                case 11:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 20]]);  break;
-                case 12:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 22]]);  break;
-                case 13:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 24]]);  break;
-                case 14:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 26]]);  break;
-                case 15:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 28]]);  break;
-                case 16:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]);  break;
-                case 17:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 32]]);  break;
-                case 18:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 34]]);  break;
-                case 19:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 36]]);  break;
-                case 20:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 38]]);  break;
-                case 21:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 40]]);  break;
+                case 0: $(imageList[i]).attr('src', allImages[randomNumbers[i + 42]]); break;
+                case 1: $(imageList[i]).attr('src', allImages[randomNumbers[i]]); break;
+                case 2: $(imageList[i]).attr('src', allImages[randomNumbers[i + 2]]); break;
+                case 3: $(imageList[i]).attr('src', allImages[randomNumbers[i + 4]]); break;
+                case 4: $(imageList[i]).attr('src', allImages[randomNumbers[i + 6]]); break;
+                case 5: $(imageList[i]).attr('src', allImages[randomNumbers[i + 8]]); break;
+                case 6: $(imageList[i]).attr('src', allImages[randomNumbers[i + 10]]); break;
+                case 7: $(imageList[i]).attr('src', allImages[randomNumbers[i + 12]]); break;
+                case 8: $(imageList[i]).attr('src', allImages[randomNumbers[i + 14]]); break;
+                case 9: $(imageList[i]).attr('src', allImages[randomNumbers[i + 16]]); break;
+                case 10: $(imageList[i]).attr('src', allImages[randomNumbers[i + 18]]); break;
+                case 11: $(imageList[i]).attr('src', allImages[randomNumbers[i + 20]]); break;
+                case 12: $(imageList[i]).attr('src', allImages[randomNumbers[i + 22]]); break;
+                case 13: $(imageList[i]).attr('src', allImages[randomNumbers[i + 24]]); break;
+                case 14: $(imageList[i]).attr('src', allImages[randomNumbers[i + 26]]); break;
+                case 15: $(imageList[i]).attr('src', allImages[randomNumbers[i + 28]]); break;
+                case 16: $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]); break;
+                case 17: $(imageList[i]).attr('src', allImages[randomNumbers[i + 32]]); break;
+                case 18: $(imageList[i]).attr('src', allImages[randomNumbers[i + 34]]); break;
+                case 19: $(imageList[i]).attr('src', allImages[randomNumbers[i + 36]]); break;
+                case 20: $(imageList[i]).attr('src', allImages[randomNumbers[i + 38]]); break;
+                case 21: $(imageList[i]).attr('src', allImages[randomNumbers[i + 40]]); break;
             }
         }
 
@@ -147,27 +147,27 @@ async function photographyTable_leftArrow() {
         await sleep(200);
 
         switch (photoSet) {
-            case 0:     photoSet = 20;  break;
-            case 1:     photoSet = 0;   break;
-            case 2:     photoSet = 1;   break;
-            case 3:     photoSet = 2;   break;
-            case 4:     photoSet = 3;   break;
-            case 5:     photoSet = 4;   break;
-            case 6:     photoSet = 5;   break;
-            case 7:     photoSet = 6;   break;
-            case 8:     photoSet = 7;   break;
-            case 9:     photoSet = 8;   break;
-            case 10:    photoSet = 9;   break;
-            case 11:    photoSet = 10;  break;
-            case 12:    photoSet = 11;  break;
-            case 13:    photoSet = 12;  break;
-            case 14:    photoSet = 13;  break;
-            case 15:    photoSet = 14;  break;
-            case 16:    photoSet = 15;  break;
-            case 17:    photoSet = 16;  break;
-            case 18:    photoSet = 17;  break;
-            case 19:    photoSet = 18;  break;
-            case 20:    photoSet = 19;  break;
+            case 0: photoSet = 20; break;
+            case 1: photoSet = 0; break;
+            case 2: photoSet = 1; break;
+            case 3: photoSet = 2; break;
+            case 4: photoSet = 3; break;
+            case 5: photoSet = 4; break;
+            case 6: photoSet = 5; break;
+            case 7: photoSet = 6; break;
+            case 8: photoSet = 7; break;
+            case 9: photoSet = 8; break;
+            case 10: photoSet = 9; break;
+            case 11: photoSet = 10; break;
+            case 12: photoSet = 11; break;
+            case 13: photoSet = 12; break;
+            case 14: photoSet = 13; break;
+            case 15: photoSet = 14; break;
+            case 16: photoSet = 15; break;
+            case 17: photoSet = 16; break;
+            case 18: photoSet = 17; break;
+            case 19: photoSet = 18; break;
+            case 20: photoSet = 19; break;
         }
     }
 
@@ -212,28 +212,28 @@ async function photographyTable_rightArrow() {
         // Swap Images
         for (var i = 0; i < 2; i++) {
             switch (photoSet) {
-                case 0:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 2]]);   break;
-                case 1:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 4]]);   break;
-                case 2:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 6]]);   break;
-                case 3:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 8]]);   break;
-                case 4:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 10]]);  break;
-                case 5:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 12]]);  break;
-                case 6:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 14]]);  break;
-                case 7:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 16]]);  break;
-                case 8:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 18]]);  break;
-                case 9:     $(imageList[i]).attr('src', allImages[randomNumbers[i + 20]]);  break;
-                case 10:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 22]]);  break;
-                case 11:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 24]]);  break;
-                case 12:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 26]]);  break;
-                case 13:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 28]]);  break;
-                case 14:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]);  break;
-                case 15:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 32]]);  break;
-                case 16:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 34]]);  break;
-                case 17:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 36]]);  break;
-                case 18:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 38]]);  break;
-                case 19:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 40]]);  break;
-                case 20:    $(imageList[i]).attr('src', allImages[randomNumbers[i + 42]]);  break;
-                case 21:    $(imageList[i]).attr('src', allImages[randomNumbers[i]]);       break;
+                case 0: $(imageList[i]).attr('src', allImages[randomNumbers[i + 2]]); break;
+                case 1: $(imageList[i]).attr('src', allImages[randomNumbers[i + 4]]); break;
+                case 2: $(imageList[i]).attr('src', allImages[randomNumbers[i + 6]]); break;
+                case 3: $(imageList[i]).attr('src', allImages[randomNumbers[i + 8]]); break;
+                case 4: $(imageList[i]).attr('src', allImages[randomNumbers[i + 10]]); break;
+                case 5: $(imageList[i]).attr('src', allImages[randomNumbers[i + 12]]); break;
+                case 6: $(imageList[i]).attr('src', allImages[randomNumbers[i + 14]]); break;
+                case 7: $(imageList[i]).attr('src', allImages[randomNumbers[i + 16]]); break;
+                case 8: $(imageList[i]).attr('src', allImages[randomNumbers[i + 18]]); break;
+                case 9: $(imageList[i]).attr('src', allImages[randomNumbers[i + 20]]); break;
+                case 10: $(imageList[i]).attr('src', allImages[randomNumbers[i + 22]]); break;
+                case 11: $(imageList[i]).attr('src', allImages[randomNumbers[i + 24]]); break;
+                case 12: $(imageList[i]).attr('src', allImages[randomNumbers[i + 26]]); break;
+                case 13: $(imageList[i]).attr('src', allImages[randomNumbers[i + 28]]); break;
+                case 14: $(imageList[i]).attr('src', allImages[randomNumbers[i + 30]]); break;
+                case 15: $(imageList[i]).attr('src', allImages[randomNumbers[i + 32]]); break;
+                case 16: $(imageList[i]).attr('src', allImages[randomNumbers[i + 34]]); break;
+                case 17: $(imageList[i]).attr('src', allImages[randomNumbers[i + 36]]); break;
+                case 18: $(imageList[i]).attr('src', allImages[randomNumbers[i + 38]]); break;
+                case 19: $(imageList[i]).attr('src', allImages[randomNumbers[i + 40]]); break;
+                case 20: $(imageList[i]).attr('src', allImages[randomNumbers[i + 42]]); break;
+                case 21: $(imageList[i]).attr('src', allImages[randomNumbers[i]]); break;
             }
         }
 
@@ -241,27 +241,27 @@ async function photographyTable_rightArrow() {
         await sleep(200);
 
         switch (photoSet) {
-            case 0:     photoSet = 1;   break;
-            case 1:     photoSet = 2;   break;
-            case 2:     photoSet = 3;   break;
-            case 3:     photoSet = 4;   break;
-            case 4:     photoSet = 5;   break;
-            case 5:     photoSet = 6;   break;
-            case 6:     photoSet = 7;   break;
-            case 7:     photoSet = 8;   break;
-            case 8:     photoSet = 9;   break;
-            case 9:     photoSet = 10;  break;
-            case 10:    photoSet = 11;  break;
-            case 11:    photoSet = 12;  break;
-            case 12:    photoSet = 13;  break;
-            case 13:    photoSet = 14;  break;
-            case 14:    photoSet = 15;  break;
-            case 15:    photoSet = 16;  break;
-            case 16:    photoSet = 17;  break;
-            case 17:    photoSet = 18;  break;
-            case 18:    photoSet = 19;  break;
-            case 19:    photoSet = 20;  break;
-            case 20:    photoSet = 0;   break;
+            case 0: photoSet = 1; break;
+            case 1: photoSet = 2; break;
+            case 2: photoSet = 3; break;
+            case 3: photoSet = 4; break;
+            case 4: photoSet = 5; break;
+            case 5: photoSet = 6; break;
+            case 6: photoSet = 7; break;
+            case 7: photoSet = 8; break;
+            case 8: photoSet = 9; break;
+            case 9: photoSet = 10; break;
+            case 10: photoSet = 11; break;
+            case 11: photoSet = 12; break;
+            case 12: photoSet = 13; break;
+            case 13: photoSet = 14; break;
+            case 14: photoSet = 15; break;
+            case 15: photoSet = 16; break;
+            case 16: photoSet = 17; break;
+            case 17: photoSet = 18; break;
+            case 18: photoSet = 19; break;
+            case 19: photoSet = 20; break;
+            case 20: photoSet = 0; break;
         }
     }
 
