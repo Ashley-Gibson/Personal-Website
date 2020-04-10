@@ -71,39 +71,40 @@
 @media screen and (max-width: 500px) and (orientation:portrait) {
 	.experienceBody {
 		.mainLayer {
+			height:auto;
 			&-header {
 				font-size: 32px;
 			}
-		}
 
-		.experienceTable {
-			&-item {
-				flex-direction: column !important;
-				width: 90% !important;
-				height: 40% !important;
-				padding-bottom: 10%;
+			.experienceTable {
+				&-item {
+					flex-direction: column !important;
+					width: 90% !important;
+					height: 40% !important;
+					padding-bottom: 10%;
 
-				&-image {
-					width: 80% !important;
+					&-image {
+						width: 80% !important;
 
-					img {
+						img {
+							width: 100% !important;
+						}
+					}
+
+					&-text {
+						padding-top: 10%;
+						text-align: center !important;
 						width: 100% !important;
-					}
-				}
 
-				&-text {
-					padding-top: 10%;
-					text-align: center !important;
-					width: 100% !important;
+						ul {
+							padding: 0 !important;
+						}
 
-					ul {
-						padding: 0 !important;
-					}
-
-					li {
-						padding-top: 5%;
-						padding-left: 0 !important;
-						list-style: none !important;
+						li {
+							padding-top: 5%;
+							padding-left: 0 !important;
+							list-style: none !important;
+						}
 					}
 				}
 			}
