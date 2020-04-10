@@ -91,7 +91,7 @@
 @media screen and (max-width: 500px) and (orientation:portrait) {
 	.educationBody {
 		.mainLayer {
-
+			overflow:auto !important;
 			.educationTable {
 				margin-top: 0;
 				height: auto;
