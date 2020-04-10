@@ -145,13 +145,20 @@
 @media screen and (max-width: 500px) and (orientation:portrait) {
 	.portfolioBody {
 		.mainLayer {
+			height:auto;
+
 			&-header {
 				text-align: center;
 			}
 
 			h2 {
+				font-size: 20px;
 				text-align: center;
 				margin-top: 1em;
+			}
+
+			.portfolioSelector {
+				font-size: 20px;
 			}
 
 			.completePortfolio {
