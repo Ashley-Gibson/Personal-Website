@@ -1,69 +1,67 @@
 .experienceBody {
 	background-image: none !important;
-}
 
-.experienceBody {
 	.mainLayer {
 		width: 100%;
 		height: 100%;
 		padding: 0 0 0 0;
-	}
-}
 
-.experienceTable {
-	position: relative;
-	display: flex;
-	flex-direction: column;
+		.experienceTable {
+			position: relative;
+			display: flex;
+			flex-direction: column;
 
-	&-item {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 80%;
-		height: 30%;
-		margin: auto;
+			&-item {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 80%;
+				height: 30%;
+				margin: auto;
 
-		&-image {
-			width: 60%;
-			height: 100%;
-			margin: auto;
+				&-image {
+					width: 60%;
+					height: 100%;
+					margin: auto;
 
-			img {
-				width: 50%;
-				height: auto;
-			}
+					img {
+						width: 50%;
+						height: auto;
+					}
 
-			&-anchor {
-				width: 100%;
-				height: 100%;
-			}
-		}
+					&-anchor {
+						width: 100%;
+						height: 100%;
+					}
+				}
 
-		&-text {
-			text-align: left;
-			width: 30%;
-			height: 100%;
+				&-text {
+					text-align: left;
+					width: 30%;
+					height: 100%;
 
-			h1 {
-				text-align: center;
-				color: grey;
-				margin: 10px 0 !important;
-				font-size: 26px;
-			}
+					h1 {
+						text-align: center;
+						color: grey;
+						margin: 10px 0 !important;
+						font-size: 26px;
+					}
 
-			h2 {
-				text-align: center;
-				color: #228B22;
-				margin: 10px 0 !important;
-			}
+					h2 {
+						text-align: center;
+						color: #228B22;
+						margin: 10px 0 !important;
+					}
 
-			ul {
-				line-height: 7px;
-			}
+					ul {
+						line-height: 7px;
+					}
 
-			li {
-				line-height: 20px;
-				font-size: 14px;
+					li {
+						line-height: 20px;
+						font-size: 14px;
+					}
+				}
 			}
 		}
 	}

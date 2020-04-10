@@ -5,10 +5,10 @@
     margin-right: auto;
     margin-left: auto;
     top: 90%;
-    width: 26%;
+    width:35%;
 
     &-container {
-        padding: 2% 2%;
+        padding: 1%;
         overflow: hidden;
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 20px;
@@ -18,27 +18,19 @@
         margin: 0;
         display: flex;
         text-align: center;
+        width:100%;
 
         a {
             float: left;
             color: white;
             font-weight: bold;
             text-decoration: none;
+            width:auto;
+            text-align:center;
+            margin:auto;
 
             &:hover {
                 color: #4eb5f1;
-            }
-
-            &:nth-child(1) {
-                margin: 0;
-            }
-
-            &:nth-child(2n+2) {
-                margin: 0 3% 0 3%;
-            }
-
-            &:nth-child(5) {
-                margin: 0;
             }
         }
     }
