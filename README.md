@@ -6,7 +6,7 @@ Personal Website used to showcase my Portfolio, Work Experience, Education and I
 
 The purpose of building this website is to showcase the development of a Website using no CMS and as fewer libraries as possible.
 
-* HTML/CSS/JS#
+* HTML/CSS/JS
 * Node.js v10.2
 * ECMAScript Modules
 * JQuery
