@@ -102,13 +102,12 @@
 					flex-direction: column !important;
 					width: 90% !important;
 					height: auto !important;
-					margin-top: 2%;
 
 					&-image {
 						position: relative !important;
 						width: 100% !important;
 						height: auto;
-						margin: 0;
+						margin: 5% auto;
 						text-align: center;
 
 						img {
@@ -118,7 +117,6 @@
 					}
 
 					&-text {
-						margin-top: 2% !important;
 						text-align: center !important;
 						width: 100% !important;
 						height: auto;
