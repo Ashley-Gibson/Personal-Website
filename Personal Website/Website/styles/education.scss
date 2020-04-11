@@ -91,7 +91,7 @@
 @media screen and (max-width: 500px) and (orientation:portrait) {
 	.educationBody {
 		.mainLayer {
-			height:auto;
+			height: auto;
 
 			.educationTable {
 				margin-top: 0;
@@ -102,9 +102,9 @@
 					flex-direction: column !important;
 					width: 90% !important;
 					height: auto !important;
+					margin-top: 5%;
 
 					&-image {
-						padding-top: 5%;
 						position: relative !important;
 						width: 100% !important;
 						height: 40%;
@@ -118,7 +118,7 @@
 					}
 
 					&-text {
-						padding-top: 5% !important;
+						margin-top: 5% !important;
 						text-align: center !important;
 						width: 100% !important;
 						height: 50%;
@@ -128,7 +128,7 @@
 						}
 
 						li {
-							padding-top: 5%;
+							margin-top: 5%;
 							padding-left: 0 !important;
 							list-style: none !important;
 						}
