@@ -80,7 +80,7 @@
 				&-item {
 					flex-direction: column !important;
 					width: 90% !important;
-					height: 40% !important;
+					height: auto !important;
 					padding-bottom: 10%;
 
 					&-image {
@@ -95,6 +95,7 @@
 						padding-top: 10%;
 						text-align: center !important;
 						width: 100% !important;
+						height:auto;
 
 						ul {
 							padding: 0 !important;
