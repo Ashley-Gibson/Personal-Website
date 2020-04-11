@@ -81,7 +81,8 @@
 					flex-direction: column !important;
 					width: 90% !important;
 					height: auto !important;
-					padding-bottom: 10%;
+					margin:0;
+					margin-top:3%;
 
 					&-image {
 						width: 80% !important;
@@ -96,13 +97,14 @@
 						text-align: center !important;
 						width: 100% !important;
 						height:auto;
+						margin:0;
 
 						ul {
 							padding: 0 !important;
 						}
 
 						li {
-							padding-top: 5%;
+							margin-top: 5%;
 							padding-left: 0 !important;
 							list-style: none !important;
 						}
