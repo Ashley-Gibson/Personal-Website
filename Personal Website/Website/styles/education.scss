@@ -102,7 +102,7 @@
 					flex-direction: column !important;
 					width: 90% !important;
 					height: 100% !important;
-					margin-top: 5%;
+					margin-top: 2%;
 
 					&-image {
 						position: relative !important;
@@ -118,10 +118,10 @@
 					}
 
 					&-text {
-						margin-top: 5% !important;
+						margin-top: 2% !important;
 						text-align: center !important;
 						width: 100% !important;
-						height: 50%;
+						height: auto;
 
 						ul {
 							padding: 0 !important;
