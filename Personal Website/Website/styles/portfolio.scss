@@ -1,5 +1,6 @@
 .portfolioBody {
 	background-image: none !important;
+	overflow: hidden;
 
 	.mainLayer {
 		width: 100%;
@@ -8,144 +9,165 @@
 		position: absolute;
 		margin: auto;
 		padding: 0 0 0 0;
+		overflow: hidden;
 
-		h2 {
-			color: #228B22;
-			text-align: center;
-			margin-bottom: 20px;
-			margin-top: 20px;
-		}
-
-		.portfolioSelector {
-			text-align: center;
-			font-size: 25px;
-			color: grey;
-
-			&-inProgressButton {
-				font-weight: normal;
-			}
-
-			&-completeButton {
-				font-weight: bold;
-			}
-
-			&-gamesButton {
-				font-weight: normal;
-			}
-		}
-
-		.completePortfolio {
+		.portfolioTable {
+			position: relative;
+			width: 80%;
 			display: flex;
+			flex-direction: column;
+			height: 74%;
+			align-self: center;
+			padding-top: 1%;
+			align-items: center;
+			align-content: center;
+			vertical-align: middle;
 			margin: auto;
-			max-width: 70%;
-			flex-wrap: wrap;
+			overflow: auto;
 
-			a {
-				text-decoration: none;
+			h2 {
+				color: #228B22;
+				text-align: center;
+				margin-bottom: 20px;
+				margin-top: 20px;
 			}
 
-			&-item {
-				flex-direction: row;
-				margin: auto;
-				margin-top: 2%;
+			.portfolioSelector {
+				text-align: center;
+				font-size: 25px;
+				color: grey;
 
-				p {
-					width: 100%;
-					height: 50px;
-					margin: 0;
-					padding: 0;
-					border: 0;
+				&-inProgressButton {
+					font-weight: normal;
+				}
+
+				&-completeButton {
 					font-weight: bold;
-					text-align: center;
 				}
 
-				&-image {
-					width: 370px;
-					height: 250px;
-					margin: 0;
-					padding: 0;
-					border: 0;
+				&-gamesButton {
+					font-weight: normal;
 				}
 			}
-		}
 
-		.inProgressPortfolio {
-			display: none;
-			margin: auto;
-			max-width: 70%;
-			flex-wrap: wrap;
-
-			a {
-				text-decoration: none;
-			}
-
-			&-item {
-				flex-direction: row;
+			.completePortfolio {
+				display: flex;
 				margin: auto;
-				margin-top: 2%;
+				width: 100%;
+				flex-wrap: wrap;
+				overflow: auto;
+				height: auto;
 
-				p {
-					width: 100%;
-					height: 50px;
-					margin: 0;
-					padding: 0;
-					border: 0;
-					font-weight: bold;
-					text-align: center;
+				a {
+					text-decoration: none;
 				}
 
-				&-image {
-					width: 370px;
-					height: 250px;
-					margin: 0;
-					padding: 0;
-					border: 0;
+				&-item {
+					flex-direction: row;
+					margin: auto;
+					margin-top: 2%;
+
+					p {
+						width: 100%;
+						height: 50px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+						font-weight: bold;
+						text-align: center;
+					}
+
+					&-image {
+						width: 370px;
+						height: 250px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+					}
 				}
 			}
-		}
 
-		.gamesPortfolio {
-			display: none;
-			margin: auto;
-			max-width: 70%;
-			flex-wrap: wrap;
-
-			a {
-				text-decoration: none;
-			}
-
-			&-item {
-				flex-direction: row;
+			.inProgressPortfolio {
+				display: none;
 				margin: auto;
-				margin-top: 2%;
+				width: 100%;
+				flex-wrap: wrap;
+				overflow: auto;
+				height: auto;
 
-				p {
-					width: 100%;
-					height: 50px;
-					margin: 0;
-					padding: 0;
-					border: 0;
-					font-weight: bold;
-					text-align: center;
+				a {
+					text-decoration: none;
 				}
 
-				&-image {
-					width: 370px;
-					height: 250px;
-					margin: 0;
-					padding: 0;
-					border: 0;
+				&-item {
+					flex-direction: row;
+					margin: auto;
+					margin-top: 2%;
+
+					p {
+						width: 100%;
+						height: 50px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+						font-weight: bold;
+						text-align: center;
+					}
+
+					&-image {
+						width: 370px;
+						height: 250px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+					}
+				}
+			}
+
+			.gamesPortfolio {
+				display: none;
+				margin: auto;
+				width: 100%;
+				flex-wrap: wrap;
+				overflow: auto;
+				height: auto;
+
+				a {
+					text-decoration: none;
+				}
+
+				&-item {
+					flex-direction: row;
+					margin: auto;
+					margin-top: 2%;
+
+					p {
+						width: 100%;
+						height: 50px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+						font-weight: bold;
+						text-align: center;
+					}
+
+					&-image {
+						width: 370px;
+						height: 250px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+					}
 				}
 			}
 		}
 	}
 }
-
 /* Mobile - Portrait */
 @media screen and (max-width: 500px) and (orientation:portrait) {
 	.portfolioBody {
 		.mainLayer {
-			height:auto;
+			height: auto;
 
 			&-header {
 				text-align: center;

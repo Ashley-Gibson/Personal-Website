@@ -1,5 +1,6 @@
 .photographyBody {
 	background-image: none !important;
+	overflow: hidden;
 
 	.mainLayer {
 		width: 100%;
@@ -7,14 +8,16 @@
 		height: auto\9;
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
+		overflow: hidden;
 
 		.photographyTable {
 			display: flex;
 			flex-direction: row;
 			padding-top: 1%;
 			width: 80%;
-			height: 80%;
+			height: 74%;
 			margin: auto;
+			overflow: auto;
 
 			.leftArrow {
 				cursor: pointer;

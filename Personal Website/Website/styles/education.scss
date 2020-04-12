@@ -11,19 +11,21 @@
 			position: relative;
 			width: 80%;
 			display: flex;
+			padding-top: 1%;
 			flex-direction: column;
-			height: 80%;
+			height: 74%;
 			align-self: center;
 			align-items: center;
 			align-content: center;
 			vertical-align: middle;
 			margin: auto;
+			overflow: auto;
 
 			&-item {
 				display: flex;
 				flex-direction: row;
 				flex-wrap: wrap;
-				margin:auto 0;
+				margin: auto 0;
 				width: 100%;
 				height: auto;
 
@@ -46,7 +48,7 @@
 						img {
 							width: 100%;
 							height: auto;
-							max-height:250px;
+							max-height: 250px;
 							margin: auto 0;
 						}
 					}
